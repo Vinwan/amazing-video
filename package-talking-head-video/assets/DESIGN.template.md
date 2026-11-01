@@ -1,0 +1,75 @@
+# Clear Signal Editorial Project
+
+## Style Prompt
+Clear, warm editorial information design. The speaker leads; graphics expose the argument's structure and evidence. Use restrained, decisive motion and one primary reading target per beat.
+
+## Topic Adaptation
+- Audience: [audience]
+- Topic tone: [analytical / urgent / reassuring / provocative]
+- Information density: [light / medium / dense]
+- Source composition: [speaker position and verified free regions]
+
+## Colors
+- Ink: `#11100D`
+- Foreground: `#FFF9EC`
+- Primary signal: `#FFD84A` (Ink text on marker)
+- Semantic palette: Purple, Orange, Red, Blue, Green; use contrast-safe values from `references/style-system.md`
+- Selected accent families: [normally 2–3 for this video's meaning]
+- Meaning -> color: [data / concept / action / risk / benefit]
+- Card treatment: [tinted panel / colored header / solid accent with verified contrast]
+- Caption highlights: [exact data phrases including qualifiers and units -> color role / treatment]
+
+## Typography
+- Chinese primary: [font]
+- Numerals: [font]
+
+## House Signatures
+- Signal marker: 3–5px evidence rule, bracket, or corner mark
+- Cards: squared editorial surfaces, 16–28px radius
+- Sequence: rectangular index chips (`01`, `02`, `03`)
+- Depth: shallow shadow; no glass or neon glow
+
+## Narrative Modes
+- A-roll: [hook, opinions, transitions, breathing room]
+- Explainer treatment: [classic: bounded floating cards/screenshots over continuous full-frame A-roll; premium-v2: relationship/evidence canvas]
+- Speaker picture-in-picture: [premium-v2 only: safe corner, diameter, omit conditions; classic: none]
+- Emphasis phrase: [2–6 characters, maximum frequency]
+
+## Explainer Components
+- Relationship map: [node and connector treatment]
+- Cycle: [active segment and direction treatment]
+- Evidence image: Paper border + context label
+- Comparison bars: neutral baseline + semantic accent on decisive values
+- Background: [classic: unchanged source footage, Ink/Paper inside cards only; premium-v2: explainer canvas]
+
+## Matching Cover
+- Inspected cover reference: [path; composition features to retain; separate from video variant]
+- Source frame and timestamp: [this video's clean A-roll]
+- Exact headline: [final text and intended line breaks]
+- Portrait scale/placement: [smaller recognizable half-body; full head and hair clear]
+- Headline zone and hair gap: [separate upper area; visible clearance]
+- Background: [topic-led; restrained technology grid/data connections for AI topics]
+- Main company/product: [dominant topic element]
+- Secondary brand elements: [relevant names/logos; placement away from head/title]
+- Asset provenance: [official product/brand assets or accurate wordmarks; identify illustrative imagery]
+- Relationship symbols and evidence: [actual supported relation; contextual brands separate]
+- Output: [3:4 final image; version; editable layout or image-edit prompt]
+- Acceptance evidence: [validation report path; compare final to reference/source at full size and thumbnail size; resolve each failed cover check]
+
+## Safe Area
+- Left/right: 80px
+- Top/bottom: 100px
+
+## Motion
+- Introduce: 0.18–0.30s [rule/bracket/chip/surface]
+- Settle: 0.25–0.45s [rise/slide/scale with decisive ease-out]
+- Resolve: 0.18–0.35s [highlight/comparison/proof completion]
+- Camera punch-ins: [major claims only; moments and scale]
+
+## What NOT to Do
+- Do not cover facial features.
+- Do not imitate a named creator or replace the house grammar with a reference style.
+- Do not use glassmorphism, neon glow, ornamental particles, or random accent colors.
+- Do not use color filters to repair incorrect HDR/SDR conversion.
+- Do not split numbers from units.
+- Do not show redundant graphics simultaneously.
