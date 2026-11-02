@@ -2,7 +2,8 @@
 
 ## Editing version
 
-- DESIGN.md and the EDL record classic or premium-v2 according to the user's wording; premium-v2 also records visualVariant as black-gold or colorful.
+- DESIGN.md and the EDL record classic, premium-v2, or narrative-v3 according to the user's wording; premium-v2 also records visualVariant as black-gold or colorful.
+- For narrative-v3, apply references/narrative-v3.md presentation and acceptance rules instead of conflicting classic/premium visual checks below. Verify footage purpose/source ledger, concept-caption separation, and meaningful presenter returns; PiP is optional. Shared fidelity, captions, export and cover checks remain required. A localized synchronized presenter PiP mask is permitted in v3 only when selected; full-frame returns retain original framing.
 - Classic retains moving full-frame A-roll and the original background throughout. Every information card, screenshot, photograph, or diagram is a bounded floating overlay (`mode: overlay`); no full-screen replacement, opaque full-canvas panel, globally darkened/blurred explainer background, or presenter PiP is used without an explicit user exception. Inspect the densest graphic frame as well as entries and exits.
 - Apply the house-style and human-reset checks below to classic. For premium-v2, use references/premium-v2.md and, for colorful, references/premium-colorful.md for visual checks; shared fidelity, captions, export, and cover checks still apply.
 - Premium-v2 includes meaningful full-frame appearances of the actual speaker, planned around the hook, judgments, breathing room, transitions, and close; picture-in-picture alone does not substitute for those beats. Verify the selected rhythm in the EDL and final playback without enforcing an arbitrary time ratio.
@@ -35,6 +36,8 @@
 - Selected foreground/background pairs pass contrast checks on actual footage, and highlights remain readable at phone size.
 
 ## Layout and motion
+
+- Premium-v2 footage needs were assessed before visual production: concrete actions considered for real footage, abstract mechanisms for diagrams; search outcomes and omission reasons recorded. Accepted clips have a linked `broll-manifest.json`, verified sources/excerpts, and narration-matched entries/exits. An all-diagram treatment is a reasoned choice, not a skipped sourcing stage.
 
 - Clear Signal Editorial remains recognizable: Ink/Paper reading surfaces, controlled multicolor semantic emphasis, editorial cards, evidence markers or index chips, and decisive settle motion.
 - External creator styling has not replaced the house typography, palette, geometry, caption semantics, or motion grammar.

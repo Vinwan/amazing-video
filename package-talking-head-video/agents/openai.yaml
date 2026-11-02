@@ -1,6 +1,6 @@
 interface:
   display_name: "口播视频后期包装"
-  short_description: "口播剪辑经典模式与精剪 2.0 彩色、黑金两种风格"
-  default_prompt: "使用 $package-talking-head-video 剪辑这段视频：剪口播视频或简洁剪视频使用经典模式，精剪视频黑金版使用既有黑金风格，精剪视频彩色版使用彩色风格；不指定风格的精剪使用黑金版。"
+  short_description: "经典悬浮包装、2.0 场景精剪与 v3.0 真人素材叙事"
+  default_prompt: "使用 $package-talking-head-video 剪辑这段视频：按照 v3.0 剪辑使用真人驱动的素材叙事；剪口播视频或简洁剪视频使用经典模式；精剪视频默认 2.0 黑金版，明确彩色版时使用彩色风格。"
 policy:
   allow_implicit_invocation: true

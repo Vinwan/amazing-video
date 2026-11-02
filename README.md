@@ -8,6 +8,7 @@
 
 | 模式 | 怎么说 | 画面特点 |
 | --- | --- | --- |
+| 3.0 素材叙事版 | 按照 v3.0 剪辑 | 真人主导讲述，贴题素材承接情境，图解解释逻辑，概念大字帮助记忆；按语义安排真人回归，小窗可选 |
 | 经典版 | 剪口播视频 / 简洁剪视频 / 简单剪视频 | 真人和原背景持续保留；信息卡、截图、图表仅做局部悬浮，不用全屏图解替换真人，也不把真人缩成小窗 |
 | 2.0 黑金版 | 精剪视频 / 优美视频 / 2.0 / 精剪视频黑金版 | 深色、暖白与金色视觉；使用连续场景、关系链和有目的的镜头运动解释内容 |
 | 2.0 彩色版 | 精剪视频彩色版 | 沿用 2.0 的结构与真人节奏，改用彩色分层面板和语义配色 |
@@ -15,6 +16,15 @@
 未指定风格的普通包装请求默认经典版；未指定配色的精剪默认黑金版。继续修改已有项目时继承原模式，不自动混合风格。
 
 2.0 不是纯图文幻灯片：开头、关键判断、转场和结尾保留有意义的全屏真人段落，解释段默认使用同步的圆形真人小窗。出现时机由内容节奏决定，不规定固定出镜比例。
+
+### v3.0 使用示例
+
+```text
+使用 $package-talking-head-video，按照 v3.0 剪辑这段视频。
+保持原比例，按口播寻找贴题素材，保留素材来源和授权记录。
+```
+
+v3.0 是独立叙事模式，不替换经典版或 2.0 的默认触发方式。真人负责观点与判断，素材负责对象、案例、情境和比喻，图形负责关系，概念大字不重复整句字幕。完整规范见 [narrative-v3.md](package-talking-head-video/references/narrative-v3.md)。当前已完成规则配置，尚未以 v3.0 实际成片验证。
 
 ## 工具分工与工作流
 
@@ -26,6 +36,8 @@
 | 视觉制作 | HyperFrames | 根据文案拆场景，制作信息卡、图解及其内部动画 |
 | 最终合成 | Remotion | 管理画布、帧率、场景顺序、真人、字幕、视觉素材和声音 |
 | 验收与交付 | Agent 与各工具 | 检查真实画面、清晰度、字幕、音画同步，并生成配套封面 |
+
+素材流程：**口播清理并冻结 → 拆出素材需求 → ChatCut `search_stock_media` 搜索候选 → 检查实际片段与来源 → 下载、验证与截取 → HyperFrames 包装 → Remotion 合成**。优先使用已提供或已批准的素材；找不到合适素材时，记录原因并保留真人或图解，不硬塞无关镜头。经典版仍仅用悬浮视频卡，2.0 可融入解释场景，v3.0 按叙事任务选择全屏素材或局部呈现。
 
 口播时间线冻结后，HyperFrames 和 Remotion 不独立修改讲话节奏。若口播有改动，受影响的字幕和场景时间也要同步更新。
 
@@ -104,6 +116,7 @@
 | --- | --- |
 | [SKILL.md](package-talking-head-video/SKILL.md) | Agent 入口、模式选择和完整流程 |
 | [style-system.md](package-talking-head-video/references/style-system.md) | 经典版视觉、字幕、标题与封面规范 |
+| [broll-sourcing.md](package-talking-head-video/references/broll-sourcing.md) | 素材搜索、片段核对、来源授权记录与合成 |
 | [premium-v2.md](package-talking-head-video/references/premium-v2.md) | 2.0 黑金版、场景设计与真人节奏 |
 | [premium-colorful.md](package-talking-head-video/references/premium-colorful.md) | 2.0 彩色版差异 |
 | [premium-finishing.md](package-talking-head-video/references/premium-finishing.md) | 精剪音效、强调色和微动画 |

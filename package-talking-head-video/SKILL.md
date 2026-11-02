@@ -1,13 +1,15 @@
 ---
 name: package-talking-head-video
-description: Edit and package Chinese talking-head videos with ChatCut speech cleanup, HyperFrames visuals, and Remotion assembly. Route “剪口播视频”, “简洁剪视频”, or “简单剪视频” to the existing classic treatment; route “精剪视频”, “优美视频”, or “2.0” to a cinematic visual-journey treatment, with explicit 彩色版 and 黑金版 visual variants. Also use for video packaging, captions, information cards, and source-fidelity or HDR/SDR diagnosis.
+description: Edit Chinese talking-head videos with ChatCut cleanup, footage sourcing, HyperFrames visuals, and Remotion assembly. “剪口播视频” or “简洁剪视频” selects classic floating overlays; “精剪视频” or “2.0” selects premium-v2 black-gold or explicit colorful; “按照 v3.0 剪辑” selects presenter-led footage storytelling. Also use for captions, video packaging, and source-quality diagnosis.
 ---
 
 # Package Talking-Head Video
 
 Produce a readable, high-retention talking-head video through one ordered pipeline:
 
-`ChatCut clean A-roll -> freeze speech timing -> HyperFrames create visuals -> Remotion assemble and render`
+`ChatCut clean A-roll -> freeze speech timing -> plan footage needs -> search candidates -> inspect clips and sources -> download and trim -> HyperFrames package visuals -> Remotion assemble and render`
+
+For every premium-v2 package, read [B-roll sourcing](references/broll-sourcing.md) after freezing speech and before authoring visuals. The user-approved AIHack V2 default combines rhythm-matched real footage for concrete actions with diagrams for abstract mechanisms. Plan and assess footage needs even when no clip is ultimately used; record search outcomes and omission reasons. Use ChatCut `search_stock_media` as the initial stock-search path. Add footage only when it clarifies the spoken idea; do not impose a stock-clip quota.
 
 Do not let the three systems compete for the same responsibility.
 
@@ -17,6 +19,7 @@ Use the user's latest explicit mode instruction and save `editMode` in the proje
 
 | User wording | editMode | Treatment |
 | --- | --- | --- |
+| 按照 v3.0 剪辑 / v3.0 / V3.0 / 3.0版剪辑 | narrative-v3 | Read references/narrative-v3.md; presenter-led footage storytelling, not a premium-v2 color variant |
 | 剪口播视频 / 简洁剪视频 / 简单剪视频 / 之前的方式 | classic | Existing Clear Signal Editorial workflow and style-system.md, including A-roll, Explainer, and Emphasis alternation |
 | 精剪视频彩色版 | premium-v2 | Use `visualVariant: colorful`; read references/premium-colorful.md and the shared premium-v2 rules |
 | 精剪视频黑金版 / 精剪视频 / 优美视频 / 2.0 | premium-v2 | Use `visualVariant: black-gold`; follow references/premium-v2.md |
@@ -26,6 +29,8 @@ Record `visualVariant` in DESIGN.md and the EDL for premium-v2. An explicit vari
 For premium-v2, read [approved finishing](references/premium-finishing.md) before planning sound, caption highlights, or small explanatory animations. Reuse this user's approved Genie 4 treatment as the default: restrained semantic SFX, consistent colored emphasis, and short causal animations. Explicit silence or later style instructions override this default; colorful retains its own palette.
 
 ## Load the required skills
+
+When the user explicitly selects v3.0, save `editMode: narrative-v3` in DESIGN.md and the EDL and read [v3.0 narrative rules](references/narrative-v3.md) before scene planning. Its presentation, typography hierarchy, footage and PiP rules override conflicting classic/premium-v2 visual instructions in steps 4–6 and their references. Shared speech, source fidelity, cover, tool roles, and delivery rules remain unchanged. V3.0 does not change the existing classic or unqualified 精剪视频 routing; continuing revisions inherit the project's mode unless explicitly changed.
 
 Before acting, load:
 
@@ -155,6 +160,8 @@ Map each beat to the house visual grammar instead of inventing a new treatment e
 Adapt information-card geometry to the actual source composition. For a centered speaker in a 16:9 shot, prefer a compact card in a verified low-information side region instead of a large centered panel. Preserve the face, head, mouth, shoulders, and bottom caption band. Reposition and proportionally resize existing cards after any canvas change; do not assume portrait placements remain valid in landscape.
 
 ## 5. Build visuals in HyperFrames
+
+Before building visuals that use supplementary video, complete the sourcing, inspection, download, and trim workflow in [B-roll sourcing](references/broll-sourcing.md). Link accepted local assets and their source ranges to the frozen EDL; classic uses floating video cards only, while premium-v2 may integrate footage into explanation scenes.
 
 Read `references/style-system.md` and create a project `DESIGN.md`, optionally from `assets/DESIGN.template.md`, before composition HTML. Include the Matching Cover plan; video style decisions alone do not satisfy the cover brief. For classic, start from `Clear Signal Editorial / 清晰证据流`; for premium-v2, apply references/premium-v2.md and, for the colorful variant, references/premium-colorful.md to the visual decisions in steps 4–6. Follow the HyperFrames visual identity gate.
 
