@@ -22,7 +22,7 @@ Save each cue's time, file, gain, narrative reason, and provenance in `sound-des
 
 ## Caption and diagram highlights
 
-For black-gold, use these exact approved colors on a dark support surface. Colorful keeps the same semantic roles with its own contrast-safe variant palette.
+For the current premium style, use these approved colors on a dark support surface until the user approves a replacement palette.
 
 | Role | Color | Meaning |
 | --- | --- | --- |

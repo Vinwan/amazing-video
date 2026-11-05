@@ -2,10 +2,9 @@
 
 ## Editing version
 
-- DESIGN.md and the EDL record classic, premium-v2, or narrative-v3 according to the user's wording; premium-v2 also records visualVariant as black-gold or colorful.
-- For narrative-v3, apply references/narrative-v3.md presentation and acceptance rules instead of conflicting classic/premium visual checks below. Verify footage purpose/source ledger, concept-caption separation, and meaningful presenter returns; PiP is optional. Shared fidelity, captions, export and cover checks remain required. A localized synchronized presenter PiP mask is permitted in v3 only when selected; full-frame returns retain original framing.
+- DESIGN.md and the EDL record classic or premium-v2 according to the user's wording; premium-v2 uses black-gold.
 - Classic retains moving full-frame A-roll and the original background throughout. Every information card, screenshot, photograph, or diagram is a bounded floating overlay (`mode: overlay`); no full-screen replacement, opaque full-canvas panel, globally darkened/blurred explainer background, or presenter PiP is used without an explicit user exception. Inspect the densest graphic frame as well as entries and exits.
-- Apply the house-style and human-reset checks below to classic. For premium-v2, use references/premium-v2.md and, for colorful, references/premium-colorful.md for visual checks; shared fidelity, captions, export, and cover checks still apply.
+- Apply the house-style and human-reset checks below to classic. For premium-v2, use references/premium-v2.md for visual checks; shared fidelity, captions, export, and cover checks still apply.
 - Premium-v2 includes meaningful full-frame appearances of the actual speaker, planned around the hook, judgments, breathing room, transitions, and close; picture-in-picture alone does not substitute for those beats. Verify the selected rhythm in the EDL and final playback without enforcing an arbitrary time ratio.
 
 ## Source and color
@@ -47,7 +46,7 @@
 - Default opening shows the actual speaker's full-frame moving A-roll plus a large centered headline from the first frame. Inspect title entry, hold and exit at phone size: the face, mouth, complete head and separate caption lane remain clear; no still portrait, circular PiP, or graphics-only card substitutes for the live opening. Adapt placement below the chin when needed rather than reducing the title to a narrow top strip.
 - If the user explicitly requested an illustrated title instead, recognizable subjects and one supported visual relationship convey the topic alongside a short headline; logos remain accurate and artwork does not crowd the face or captions.
 - Entrance animation is visible but shorter than the reading time.
-- Punch-ins preserve headroom.
+- Camera punch-ins affect graphic assets only unless A-roll reframing is explicitly authorized; full-frame presenter framing remains intact.
 - Representative frames inspected at hook, first data point, longest caption, steps, and CTA.
 - Landscape information cards use verified low-information side regions and do not reuse oversized portrait placement.
 - Every scene has one primary reading target; decorative motion and redundant cards have been removed.
@@ -64,7 +63,7 @@
 Record each applicable item below with pass/fail and brief visual evidence in the project's validation report; explain not-applicable items. Inspect the actual final image, not only the prompt or layout code. Resolve failures before declaring the cover complete, including after revisions. Do not replace this review with a single “size correct / face clear” summary.
 
 - DESIGN.md contains the cover plan, including the inspected cover reference, source frame/time, headline, portrait placement, background, topic assets and supported relationships.
-- The final image is compared beside the approved reference and source frame; the established cover composition has not been replaced by the video's black-gold or colorful styling, an oversized indoor screenshot, or a title-card layout unless explicitly requested.
+- The final image is compared beside the approved reference and source frame; the established cover composition has not been replaced by the video's black-gold styling, an oversized indoor screenshot, or a title-card layout unless explicitly requested.
 - Source likeness is checked in the result: face, glasses, hair, clothing and expression remain faithful. Generated product illustrations are distinguishable from documentary product imagery.
 
 - A matching screenshot-led cover is delivered with the video; the selected frame comes from this video's A-roll, the user's face is recognizable and unobscured, and the short title reads clearly at thumbnail size.

@@ -1,6 +1,6 @@
 # Supplementary footage / B-roll
 
-Use this after ChatCut speech cleanup and timing freeze, before HyperFrames visual production. Start with ChatCut `search_stock_media`; do not install a new downloader or start paid generation automatically.
+After ChatCut freezes speech, the agent working under the HyperFrames skill owns shot planning, B-roll briefs and editorial selection. Pixabay supplies candidates, not editorial decisions. Remotion places accepted media on the frozen timeline. Do not install a new downloader or start paid generation automatically.
 
 ## User-approved premium default — AIHack V2
 
@@ -21,7 +21,9 @@ Specific products, model versions, people, companies, or events require verified
 
 ## 2. Search candidates
 
-Discover the live `search_stock_media` schema before calling it. Use `kind: video`, initially Pexels/Pixabay, and orientation appropriate to the intended card or scene. Turn abstract Chinese concepts into concrete visual search phrases, including English alternatives when useful: subject + visible action + setting. Search a small candidate set and refine based on actual results rather than downloading everything.
+Search Pixabay first. Use the [Pixabay video API](https://pixabay.com/api/docs/#api_search_videos) at `https://pixabay.com/api/videos/` when `PIXABAY_API_KEY` is available from the local secret environment. Send the key only to this official HTTPS endpoint; never write it into the Skill, GitHub, logs, manifests, browser history, or command arguments. Use URL-encoded `q`, a small `per_page` (start at 5), and inspect rendition width/height for orientation. Save only non-secret fields such as asset ID, source page and rendition metadata. If the direct API is unavailable, use ChatCut `search_stock_media` scoped to Pixabay when available, without passing the personal key to ChatCut. If neither path works, report the limitation and use verified existing media, A-roll or a diagram.
+
+Translate each shot brief into concrete searches: subject + visible action + setting. Judge candidates from actual footage against the brief, not title or thumbnail alone. Keep the set small; refine only if needed.
 
 Read each candidate's title, description, tags, page URL, license, and attribution fields. Returned metadata and thumbnails are leads, not proof of clip content or usage rights. Stock search need not find a named product's official demonstration; if none is suitable, report the gap and retain A-roll or a diagram rather than substituting a false match. Official footage or self-recording can be proposed as a separate source path.
 
@@ -39,10 +41,9 @@ Keep the downloaded original and create a separate excerpt when needed. Record s
 
 ## 5. Package and assemble
 
-- Narrative-v3: follow [v3.0](narrative-v3.md) for presenter, footage and diagram alternation. Full-frame footage is allowed; PiP is optional by narrative value, not required for every explanation. Keep shared sourcing, rights, timing and audio checks below.
 
 - Classic: a bounded floating video card over continuous full-frame presenter and original background. Never turn the card into a full-screen replacement or shrink the presenter into PiP. Protect face, gestures, and captions; simplify or omit the card if there is no readable safe placement.
-- Premium-v2: footage may occupy an explanation scene with synchronized circular presenter PiP and planned full-frame presenter returns. Retain the selected black-gold or colorful identity.
+- Premium-v2: footage may occupy an explanation scene with synchronized circular presenter PiP and planned full-frame presenter returns. Retain the selected black-gold identity.
 - HyperFrames owns card geometry, labels, transitions, and internal graphic animation. Remotion owns final placement, source offsets, duration, and audio routing. If HyperFrames renders video into an asset, record the baked source range and do not apply that trim twice. Otherwise use the same EDL ranges for Remotion's video layer and the HyperFrames frame/overlay.
 - Fetch media before rendering; final renders use local verified assets rather than expiring search URLs.
 

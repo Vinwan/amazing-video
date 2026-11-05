@@ -27,7 +27,7 @@ Build this version as a hybrid talking-head film with visual explanations. Use t
 
 Choose shot changes from the transcript's argument and the speaker's recorded expression/gesture. Mark the following opportunities before authoring graphics:
 
-- **Opening:** default to full-frame moving A-roll plus a prominent centered title from the first frame, following the approved presenter-plus-title layout in `style-system.md`. Keep the face and caption lane clear, then remove the title and enter the visual journey at a semantic beat. An illustrated or graphics-only cold open requires an explicit user request.
+- **Opening:** follow [opening rules](opening.md): moving full-frame A-roll with a prominent centered title from frame one. Keep the face and caption lane clear, then enter the explanation at a semantic beat. Graphics-only opening requires an explicit request.
 - **Key judgment:** return to full-frame A-roll for a personal interpretation, surprising conclusion, rhetorical question, or emotionally delivered line. Let a simple caption or keyword support the performance.
 - **Chapter handoff:** use the speaker to summarize the previous mechanism and pose the next question when that creates a natural transition.
 - **Breathing room:** after a dense chain, return to a complete spoken thought on camera so viewers can absorb the information. Do not interrupt an unfinished diagram solely to show a face.
@@ -68,7 +68,7 @@ For future premium-v2 videos, use the actual cleaned speaker in a circular pictu
 - Use subdued relevant photographs or textures behind infrastructure/evidence beats. Keep them subordinate to diagrams and text.
 - Use bold, compact sans-serif titles and lower captions. A slight oblique display treatment is optional if Chinese glyphs remain clear; readability takes priority.
 - Keep the ordinary caption lane stable. Use side annotations for values and units, stage labels for structure, and chart panels for evidence. Avoid repeating the entire caption in the diagram.
-- Adapt the approved centered presenter-plus-title opening to this palette. The separate cover retains the shared matching-cover composition and technology-background guidance in `style-system.md`; do not force it into the video's black-gold title-card treatment. Create topic-specific assets and compositions.
+- Adapt the opening to this palette. The separate cover follows [cover rules](cover.md), not the video's black-gold title-card treatment. Create topic-specific assets and compositions.
 
 ## Production handoff
 

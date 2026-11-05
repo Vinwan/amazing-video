@@ -1,4 +1,8 @@
-# Clear Signal Editorial Project
+# Video Packaging Project
+
+- editMode: [classic / premium-v2]
+- Visual authority: [classic: style-system.md / premium: premium-v2.md and premium-finishing.md]
+- Use only the selected mode's tokens; cover design remains separate.
 
 ## Style Prompt
 Clear, warm editorial information design. The speaker leads; graphics expose the argument's structure and evidence. Use restrained, decisive motion and one primary reading target per beat.
@@ -9,25 +13,12 @@ Clear, warm editorial information design. The speaker leads; graphics expose the
 - Information density: [light / medium / dense]
 - Source composition: [speaker position and verified free regions]
 
-## Colors
-- Ink: `#11100D`
-- Foreground: `#FFF9EC`
-- Primary signal: `#FFD84A` (Ink text on marker)
-- Semantic palette: Purple, Orange, Red, Blue, Green; use contrast-safe values from `references/style-system.md`
-- Selected accent families: [normally 2–3 for this video's meaning]
-- Meaning -> color: [data / concept / action / risk / benefit]
-- Card treatment: [tinted panel / colored header / solid accent with verified contrast]
-- Caption highlights: [exact data phrases including qualifiers and units -> color role / treatment]
-
-## Typography
-- Chinese primary: [font]
-- Numerals: [font]
-
-## House Signatures
-- Signal marker: 3–5px evidence rule, bracket, or corner mark
-- Cards: squared editorial surfaces, 16–28px radius
-- Sequence: rectangular index chips (`01`, `02`, `03`)
-- Depth: shallow shadow; no glass or neon glow
+## Colors and Geometry
+- Palette and semantic colors: [copy selected mode's current values, then record project overrides]
+- Chinese primary / numeral font: [installed, licensed family and weight]
+- Card surface / radius / border / shadow: [selected mode values and canvas-scaled dimensions]
+- Connectors / index chips / active-state treatment: [selected mode]
+- Caption emphasis: [role mapping; exact spans belong in captions.json]
 
 ## Narrative Modes
 - A-roll: [hook, opinions, transitions, breathing room]
@@ -57,14 +48,15 @@ Clear, warm editorial information design. The speaker leads; graphics expose the
 - Acceptance evidence: [validation report path; compare final to reference/source at full size and thumbnail size; resolve each failed cover check]
 
 ## Safe Area
-- Left/right: 80px
-- Top/bottom: 100px
+- Canvas and display orientation: [actual dimensions]
+- Left/right/top/bottom: [derive from canvas, platform UI and verified free regions; record final px]
+- Protected face/gesture/caption regions: [actual footage]
 
 ## Motion
 - Introduce: 0.18–0.30s [rule/bracket/chip/surface]
 - Settle: 0.25–0.45s [rise/slide/scale with decisive ease-out]
 - Resolve: 0.18–0.35s [highlight/comparison/proof completion]
-- Camera punch-ins: [major claims only; moments and scale]
+- Graphic camera movement: [meaningful beats only; preserve A-roll framing]
 
 ## What NOT to Do
 - Do not cover facial features.
