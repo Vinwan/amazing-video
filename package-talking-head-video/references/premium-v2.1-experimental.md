@@ -1,0 +1,72 @@
+# 精剪视频2.1 — experimental presenter-side information
+
+Status: opt-in experiment, not yet visually validated on a produced 2.1 video. `editMode: premium-v2.1-experimental`; inherit [2.0](premium-v2.md) except for the sparse-information scenes defined here. Ordinary “精剪视频” remains 2.0. This reference is the isolated home of the experiment, so it can be removed without rewriting stable 2.0.
+
+## What the supplied references establish
+
+The user supplied two screenshots of landscape talking-head videos displayed inside a portrait social app. In one, a large percentage and two short comparison bars sit to the speaker’s left, with supporting evidence at the right. In the other, milestone figures sit left and a supporting screenshot sits right, leaving the person as the main visual subject. The reusable idea is the spatial relationship: live person, original room, sparse evidence in available side space.
+
+Use only that relationship. Keep this skill’s black-gold palette and semantic highlight colors. Do not copy the creator, exact typography, factual numbers, watermark, phone/app chrome, chapter bars or social controls. The attached screenshots are not redistributed with this reference. A portrait screenshot of a landscape video does not authorize a portrait master, letterboxing added for imitation, or a crop of the user’s video.
+
+## Decide by information density and usable space
+
+| Spoken content | Preferred 2.1 treatment |
+| --- | --- |
+| One fact, value, takeaway, or short label | One readable side annotation or compact card beside the full-frame speaker |
+| One or two brief information cards or a short comparison | Place in a verified free region on one side, or on opposite sides if both remain clear; reveal sequentially when needed |
+| A simple unbranched process, usually two or three short steps | Compact side flow with a real directional relationship, revealed with the narration |
+| Dense text, detailed evidence, a complex mechanism/network, branching flow, or insufficient free space | Simplify or sequence first; if that still fails, use the inherited 2.0 explanation scene and record why |
+
+Card count is a cue, not the decision by itself: two dense tables are not sparse; three tiny labels may still form one simple readable process. Do not shrink text, hide units, or squeeze a model into a narrow strip just to retain the side treatment.
+
+## Layout and motion contract
+
+- Use the matching moving full-frame cleaned A-roll and its original background. Do not shrink it into a circular/rectangular PiP, crop/reposition the person, generate a cutout, or pan the camera to manufacture empty space. Do not add a duplicate presenter circle over the full-frame speaker.
+- Inspect source frames across the whole selected passage, including the widest gesture. Choose left/right placement from actual low-information regions, not a fixed coordinate copied from the references. Protect the complete head, eyes, mouth, meaningful gestures, products and the fixed caption lane.
+- Information floats in local side regions with transparency outside its content. Use the existing cream/gold/data/risk colors and a restrained local Ink/Paper support when contrast needs it. No opaque full-canvas panel, global darkening/blur, or full-width card backdrop for a sparse beat.
+- Make the evidence large enough to read on a phone while keeping the speaker recognizable and visually primary. A single number retains its qualifier and unit. Avoid duplicating the whole subtitle sentence in a second large heading.
+- Prefer one coherent group and at most one or two brief cards visible together. For a short process, keep node identities and connector direction stable; introduce the current step at its spoken onset. If two-sided evidence crowds the person, reduce or sequence it.
+- HyperFrames owns the bounded graphic and its internal reveal; Remotion places it over the uninterrupted A-roll. Export real alpha outside the graphic. For a transparent video, enable alpha-aware compositing in Remotion (for example `OffthreadVideo transparent`) and inspect the result for a black/opaque rectangle.
+- Keep motion restrained: short settle entrance, stable reading hold, clear exit at the end of the thought. No drifting, constant pulsing, or decorative movement around the face. The inherited opening title resolves before a side information card competes with it.
+
+These rules apply only to information over the actual speaker. Stock-video scenes continue to show footage alone, with no actual presenter or side information cards. Keep the existing clean-footage/no-corner-label rule, prefer distinct Pixabay assets, and continue narration/captions as appropriate. Music remains a per-video choice. All source-fidelity, caption, tool-role and audio-sync rules still apply.
+
+## Planning and handoff
+
+Record root `editMode: premium-v2.1-experimental` and `baseMode: premium-v2` in DESIGN.md and the EDL. Include the root mode even though the shared manifest’s short inline example omits it. Keep the existing `presentation` vocabulary: each selected side scene is `presentation: speaker`, `pip: false`, `mode: overlay`, with bounded asset dimensions/placement, protected regions and a short `beatReason`. The reason should identify both sparse content and the usable side space. A complex fallback may use `presentation: hybrid` under inherited 2.0 rules; document the density/readability reason. Stock remains `presentation: explainer`, `pip: false` with no actual presenter. No new scene-presentation enum is required.
+
+Example of a scene record, not fixed geometry:
+
+```json
+{
+  "id": "one-fact",
+  "startMs": 12000,
+  "endMs": 17000,
+  "presentation": "speaker",
+  "mode": "overlay",
+  "pip": false,
+  "placement": {"side": "left", "verifiedFromSource": true},
+  "protect": ["head", "face", "mouth", "gestures", "captions"],
+  "beatReason": "One short fact; left side stays clear through the passage"
+}
+```
+
+The final EDL must replace the planning placeholder with actual asset path, dimensions and pixel placement. Use the shared absolute millisecond/frame contract; do not retime speech for a card.
+
+## Experiment acceptance
+
+Apply the shared technical, source, captions, sound and cover checklist. For an explicitly selected 2.1 project, this reference is the authority for mode/presentation exceptions: accept root `premium-v2.1-experimental` instead of the shared checklist’s stable-mode-only wording, and use the side-scene checks below instead of 2.0’s default circle requirement. Do not relabel the project 2.0 just to satisfy the stable-mode list. Complex 2.0 fallback scenes still follow the inherited circle/readability rules.
+
+- On the first real 2.1 project, inspect a representative single-fact, two-card and simple-flow scene before scaling the treatment across the whole video. Use only cases present in the script; do not invent extra content to fill a test quota.
+- View actual composed entry, settled, widest-gesture, longest-text and exit frames at full size and phone size. The underlying moving person and room remain intact; there is no hidden face, gesture, caption collision, PiP duplicate or accidental full-frame black graphic layer.
+- Read a value with its units/qualifiers, and follow the simple flow in narration order. If the side space is insufficient, simplify/sequence or use the recorded 2.0 fallback; do not solve it by cropping the speaker or reducing readability.
+- Verify every stock interval still has no actual-presenter layer. Check diagram/stock/speaker transitions and audio continuity.
+- Record observed strengths/problems and any fallback in the project validation notes. A valid skill file or successful render is not proof that this visual experiment works. Do not mark the design approved until actual 2.1 footage has been inspected; no routine extra user approval checkpoint is required for an already authorized edit.
+
+## Keep or remove independently
+
+Keep the implementation on Git branch `experiment/premium-v2.1` until the user chooses to retain it. Do not merge it into `main` automatically. Do not modify `premium-v2.md` or existing 2.0 output to implement/test this experiment.
+
+If the user rejects 2.1 later, first inspect the repository and actual installed skill and back up any local changes. If the installation matches this experimental version, restore it from stable `main`; otherwise reverse only the experiment-specific edits, preserving unrelated changes. Remove the experimental branch only when requested. The reference plus its SKILL.md routing row/paragraph, optional UI metadata and README entry are the only experiment-specific files/edits; no experimental behavior is embedded in shared 2.0 rules.
+
+Before removing the reference, retain a copy with any existing 2.1 video project’s DESIGN/EDL so future edits have the actual rules used. Existing projects stay labeled with their actual mode until separately revised; never silently relabel them as 2.0 or rerender them as part of deleting the skill experiment. An archived project reference does not activate 2.1 for new videos.

@@ -1,6 +1,6 @@
 ---
 name: package-talking-head-video
-description: Edit Chinese talking-head videos using ChatCut cleanup, HyperFrames shot planning and visuals, Pixabay stock footage, and Remotion assembly. 剪口播视频 or 简洁剪视频 selects classic floating overlays; 精剪视频 or 精剪版 selects the established black-gold premium treatment. Also use for captions and source-quality diagnosis.
+description: Edit Chinese talking-head videos using ChatCut cleanup, HyperFrames shot planning and visuals, Pixabay stock footage, and Remotion assembly. 剪口播视频 or 简洁剪视频 selects classic floating overlays; 精剪视频 or 精剪版 selects established black-gold 2.0; explicit 精剪视频2.1 selects an experimental presenter-side treatment for sparse information. Also use for captions and source-quality diagnosis.
 ---
 
 # Package Talking-Head Video
@@ -8,12 +8,15 @@ description: Edit Chinese talking-head videos using ChatCut cleanup, HyperFrames
 ## Scope and mode first
 
 Determine the requested task before loading tool skills. Diagnosis is read-only; captions-only stops after verified captions; cover-only never rerenders the video. Full packaging includes the matching cover.
-Only two modes are supported; persist `editMode` in DESIGN.md and the EDL:
+There are two stable modes and one opt-in experimental branch; persist `editMode` in DESIGN.md and the EDL:
 
 | Request | editMode | Visual authority |
 | --- | --- | --- |
 | 剪口播视频 / 简洁剪视频 / 简单剪视频 / 经典版 / 之前的方式 | classic | [Classic](references/style-system.md): continuous full-frame presenter; bounded floating cards, screenshots and clips only |
 | 精剪视频 / 精剪版 / 精剪视频黑金版 / 优美视频 / 2.0 | premium-v2 | [Premium](references/premium-v2.md): established black-gold treatment; explanation scenes default to synchronized circular actual-presenter PiP |
+| 精剪视频2.1 / 精剪2.1 / 2.1实验版 | premium-v2.1-experimental | [Experimental 2.1](references/premium-v2.1-experimental.md): inherits 2.0; sparse information sits beside the full-frame speaker |
+
+Match an explicit 2.1 request before generic “精剪视频”. Ordinary “精剪视频” still selects stable 2.0. Load the 2.1 reference only for that explicit choice or an existing project already marked 2.1; its sparse-information rules override the inherited 2.0 presentation for those scenes only. For 2.1 acceptance, its explicit mode/presentation exceptions take precedence over the shared checklist’s stable-mode wording; all shared technical checks still apply. Keep the experiment isolated and removable; do not edit stable 2.0 defaults to implement it.
 
 Unspecified packaging defaults to classic. Revisions inherit a supported project's mode; ask which remaining mode to use for an unsupported legacy project. Do not silently blend or migrate modes.
 Latest explicit user instructions override defaults. Proposed color/geometry worksheets do not change the active style until the user approves them.

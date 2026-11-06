@@ -1,6 +1,6 @@
 interface:
   display_name: "口播视频后期包装"
-  short_description: "中文口播视频剪辑与包装：经典悬浮信息卡和黑金精剪两种模式"
-  default_prompt: "使用 $package-talking-head-video 剪辑这段视频：简洁剪视频使用经典版；精剪视频或精剪版使用既有黑金风格。"
+  short_description: "中文口播视频剪辑与包装：经典版、黑金精剪2.0及可选2.1实验分支"
+  default_prompt: "使用 $package-talking-head-video 剪辑这段视频：简洁剪视频使用经典版；精剪视频使用黑金2.0；明确选择精剪视频2.1时，少量信息放在人物旁。"
 policy:
   allow_implicit_invocation: true
