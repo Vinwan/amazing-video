@@ -4,7 +4,7 @@ The user approved these three elements in the delivered Genie 4 / 世界模型 v
 
 ## Semantic sound effects
 
-Use a small recurring sound vocabulary at meaningful title landings, scene changes, inputs, discoveries, selected outcomes, and closing takeaways. Place cues against frozen speech and the visible action; leave ordinary speech and reading holds quiet. Do not infer a request for background music. Explicit silence overrides the SFX default.
+Use a small recurring sound vocabulary at meaningful title landings, scene changes, inputs, discoveries, selected outcomes, and closing takeaways. Place cues against frozen speech and the visible action; leave ordinary speech and reading holds quiet. Do not infer a request for background music. Music is chosen separately for each new video: follow an explicit current-project choice; otherwise ask once whether it is wanted while continuing independent work. Do not make a previous project’s track or music-on setting the default. Explicit silence overrides the SFX default.
 
 The actual five approved files are bundled in [assets/approved-sfx](../assets/approved-sfx/); `manifest.json` preserves their source-library descriptions and durations. They were copied from the HyperFrames bundled offline SFX library. Preserve source metadata; do not invent a license claim. Copy used files into each project's media folder so the editable package remains self-contained.
 

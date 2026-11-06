@@ -3,7 +3,7 @@
 ## Editing version
 
 - DESIGN.md and the EDL record classic or premium-v2 according to the user's wording; premium-v2 uses black-gold.
-- Classic retains moving full-frame A-roll and the original background throughout. Every information card, screenshot, photograph, or diagram is a bounded floating overlay (`mode: overlay`); no full-screen replacement, opaque full-canvas panel, globally darkened/blurred explainer background, or presenter PiP is used without an explicit user exception. Inspect the densest graphic frame as well as entries and exits.
+- Classic retains moving full-frame A-roll and the original background except for the user-approved stock-only video scenes in references/broll-sourcing.md. Every information card, screenshot, photograph, or diagram is a bounded floating overlay (`mode: overlay`); no full-screen replacement, opaque full-canvas panel, globally darkened/blurred explainer background, or presenter PiP is used without an explicit user exception. Inspect the densest graphic frame as well as entries and exits.
 - Apply the house-style and human-reset checks below to classic. For premium-v2, use references/premium-v2.md for visual checks; shared fidelity, captions, export, and cover checks still apply.
 - Premium-v2 includes meaningful full-frame appearances of the actual speaker, planned around the hook, judgments, breathing room, transitions, and close; picture-in-picture alone does not substitute for those beats. Verify the selected rhythm in the EDL and final playback without enforcing an arbitrary time ratio.
 
@@ -21,6 +21,7 @@
 - Display-conformed source, intermediate, and final compared at matching timestamps.
 - Skin, highlights, and neutral background checked with scopes.
 - Final color tags verified.
+- Delivery uses the source-fidelity settings: lossless/visually lossless handoff, lossless frame capture, and a verified high-quality final encode. A clarity revision compares matching source/intermediate/final detail samples; source resolution limits are reported accurately.
 
 ## Transcript and captions
 
@@ -36,6 +37,10 @@
 
 ## Layout and motion
 
+- Pixabay placements have been checked by provider asset ID for unnecessary repetition; a different trim of the same asset counts as reuse. Any deliberate repeat has a recorded reason.
+- Every stock-video scene shows no actual presenter, including PiP, cutouts, underlying letterbox areas, and entry/exit overlaps. Narration may continue; stock scenes have `pip: false` in the EDL.
+- Stock footage has no automatic corner “示意”/category labels. Inspect the actual composed excerpts, including both top corners; any requested or necessary exception is recorded. Source provenance remains in the ledger/credits.
+- Background music follows the choice for this video; it is not inferred from a previous project or from the SFX default.
 - Premium-v2 footage needs were assessed before visual production: concrete actions considered for real footage, abstract mechanisms for diagrams; search outcomes and omission reasons recorded. Accepted clips have a linked `broll-manifest.json`, verified sources/excerpts, and narration-matched entries/exits. An all-diagram treatment is a reasoned choice, not a skipped sourcing stage.
 
 - Clear Signal Editorial remains recognizable: Ink/Paper reading surfaces, controlled multicolor semantic emphasis, editorial cards, evidence markers or index chips, and decisive settle motion.

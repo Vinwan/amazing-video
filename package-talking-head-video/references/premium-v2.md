@@ -39,6 +39,8 @@ Before rendering, review any long graphics-only passage for a suitable speaker r
 
 Keep A-roll returns synchronized to the corresponding passage of the frozen cleaned source. Continue the same speech across visual switches without replaying, replacing, or retiming words. Preserve the existing source framing and natural skin color; do not force the dark/gold graphic palette onto the real footage. During explanation sections, default to a smaller circular picture-in-picture of the actual speaker over the explanatory background, following the layout contract below. Retain full-frame speaker beats.
 
+Stock-video scenes are an exception: show only the stock footage, with no actual-presenter layer or circular PiP. Preserve the narration and ordinary captions; record `pip: false` in the EDL and verify entries/exits for presenter leakage. The circular treatment below applies to non-stock explanation backgrounds.
+
 ## Circular speaker over explanation backgrounds
 
 For future premium-v2 videos, use the actual cleaned speaker in a circular picture-in-picture while the background shows the content being explained: product screenshots, evidence, diagrams, comparisons, or demonstrations. This is the user-approved default for explanation beats, not a requirement inherited from the reference sample. Keep opening, key judgments, and ending on full-frame A-roll when their performance carries the argument. Do not retroactively revise an already approved delivery unless requested.

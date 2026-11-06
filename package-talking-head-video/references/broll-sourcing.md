@@ -15,6 +15,8 @@ Before visual production, save each useful footage need with its spoken phrase, 
 
 ## 1. Plan needs from the frozen speech
 
+Prefer visual variety within each video: search for distinct Pixabay asset IDs rather than repeating a selected clip. Another trim, crop or rendition of the same provider asset ID still counts as reuse. Reuse only for a deliberate callback or when suitable alternatives are unavailable; record the reason and repeated placements in the source ledger. This is a preference, not a clip quota or a ban on reusing assets across different projects.
+
 For each useful footage beat, record scene ID, exact spoken phrase, timeline start/end in milliseconds, what the viewer should see, and whether it is factual evidence or generic illustration. Do not add stock merely to fill silence or decorate every sentence. Preserve supplied and approved footage before searching for substitutes.
 
 Specific products, model versions, people, companies, or events require verified matching footage to serve as evidence. Generic stock can illustrate a concept but cannot establish that a named company owns the depicted facility or that a product has the depicted capability.
@@ -37,18 +39,23 @@ If preview access is insufficient, make a permitted inspection download, inspect
 
 Use the selected result's current download URL and suggested filename. Save within the project's media directory, not inside this Skill. Verify a complete decodable file, duration, dimensions, frame rate, orientation, and the actual selected excerpt. Load the applicable ChatCut asset-import skill before importing into ChatCut. Local Remotion assembly requires a verified local asset; a remote asset card alone is insufficient.
 
+Select the highest-quality useful available rendition; do not default to the smallest version whose width happens to meet the canvas. Follow [source fidelity](source-fidelity.md) for any delivery-size conversion.
+
 Keep the downloaded original and create a separate excerpt when needed. Record source in/out independently of placement on the frozen speech timeline. Preserve aspect ratio; default to contain within the card or scene, without stretching. Do not crop or retime A-roll to accommodate footage. Prefer selecting a shorter appropriate excerpt over unexplained looping, reversal, or speed changes. Stock sound is muted by default; deliberate source sound must not duplicate or overwhelm the dialogue.
 
 ## 5. Package and assemble
 
 
-- Classic: a bounded floating video card over continuous full-frame presenter and original background. Never turn the card into a full-screen replacement or shrink the presenter into PiP. Protect face, gestures, and captions; simplify or omit the card if there is no readable safe placement.
-- Premium-v2: footage may occupy an explanation scene with synchronized circular presenter PiP and planned full-frame presenter returns. Retain the selected black-gold identity.
+- Both modes: when stock video plays, show the footage directly, filling the master canvas with its aspect ratio preserved (`contain` as needed), with no actual-presenter background, cutout or PiP visible. Use an opaque backing so letterbox regions do not reveal the presenter. Continue the same narration and ordinary captions; stock audio stays muted unless deliberately selected. End the stock scene before returning to the presenter.
+- This is the user-approved stock-footage exception to classic continuous A-roll; other classic information cards remain bounded overlays. Premium diagram-only explanations retain their synchronized circular presenter default.
 - HyperFrames owns card geometry, labels, transitions, and internal graphic animation. Remotion owns final placement, source offsets, duration, and audio routing. If HyperFrames renders video into an asset, record the baked source range and do not apply that trim twice. Otherwise use the same EDL ranges for Remotion's video layer and the HyperFrames frame/overlay.
 - Fetch media before rendering; final renders use local verified assets rather than expiring search URLs.
+- Keep stock scenes clean by default. Do not automatically overlay “示意”, “情景示意”, “概念示意”, footage-category chips, or similar labels in the upper left, upper right, or another corner. Ordinary speech captions remain. Store illustration status, limitations and attribution in `broll-manifest.json` and the credits/source document. Add an on-screen identifier only when the user requests it, a selected asset requires visible attribution, or a specific factual claim would otherwise mislead; prefer a more suitable asset or clear narration over a generic corner disclaimer. Never imply that generic stock is actual historical/event footage.
 
 ## Source ledger and acceptance
 
 Keep a project `broll-manifest.json` linked from the EDL, with each accepted clip's ID, scene ID, spoken phrase, evidence/illustration role, provider and provider asset ID, source page URL, license URL and check date, attribution text when required, original/local excerpt paths, source in/out, timeline start/end, dimensions, fit/placement, and audio treatment. Record any identity or access limitation instead of inventing metadata.
+
+Before delivery group placements by provider and asset ID to detect repeats; verify that any retained repeat has a reason. Inspect stock entries, middles and exits to confirm no presenter is visible, including under letterbox regions or during a transition.
 
 Before delivery inspect the actual composed excerpt, entry, and exit: it matches the narration, retains readable detail and correct identity, respects the mode's presenter treatment, does not imply unsupported facts, and leaves captions unobstructed. Include the source ledger and required credits with the project. Never claim that technical download success proves editorial suitability or permission.

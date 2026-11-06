@@ -23,8 +23,12 @@ Latest explicit user instructions override defaults. Proposed color/geometry wor
 - ChatCut owns retained speech, cleanup, final transcript and lip sync. Freeze verified A-roll before downstream timing; speech changes invalidate affected captions/scenes.
 - HyperFrames owns visual interpretation, graphic layout and internal animation. Remotion owns master FPS/canvas, placement, source offsets, captions, mix and final render. Never implement the same animation in both.
 - Preserve the original file, display-conformed aspect ratio, complete A-roll framing, proportions and natural skin color. Only premium's localized circular PiP mask is an exception; full-frame returns stay intact. A different-ratio deliverable needs explicit authorization and a separate derivative.
-- Use delivery-grade media, never upscale a preview proxy when a better source exists. Verify actual pixels and decoded media, not just export settings.
+- Use delivery-grade media, never upscale a preview proxy when a better source exists. Preserve detail with a lossless/visually lossless handoff and lossless frame capture; follow the delivery settings in [source fidelity](references/source-fidelity.md). Verify actual pixels and decoded media, not just export settings.
 - Keep one dialogue stream; duplicate presenter/B-roll video layers are muted unless deliberately mixed.
+- Prefer distinct Pixabay footage within each video; avoid reusing the same provider asset ID just with another trim. Seek another suitable shot first; record a deliberate repeat and its reason in the source ledger.
+- During stock-video playback, show the footage alone with no actual-presenter layer, cutout or circular PiP; keep narration/captions as needed. This stock-only treatment applies to both modes and is the user-approved exception to classic continuous A-roll. Diagram-only explanations retain their mode’s presenter treatment.
+- Keep stock footage visually clean: no automatic corner labels such as “示意”, “情景示意”, or “概念示意”; retain provenance in the source ledger. See [B-roll](references/broll-sourcing.md) for exceptions.
+- Background music is a per-video choice, separate from semantic SFX. Follow the user’s choice for the current video; if unspecified, ask once whether to add music while continuing independent editing. Do not carry a previous video’s music decision or track into a new video automatically.
 - Missing tools or unreadable assets must be reported; no silent role replacement or false completion.
 - Default opening is moving full-frame presenter plus a prominent centered headline from frame one, protecting face and a separate caption lane. Default cover uses a faithful real frame, clear full head, separate large title, and topic-led imagery.
 - Full packaging runs through verification and delivery; no routine extra approval checkpoints when unattended execution was requested.
@@ -47,8 +51,8 @@ Honor each tool skill's prerequisites. Do not preload every plugin merely becaus
 | Acceptance | [Checklist](references/quality-checklist.md), selected mode's acceptance items | Structural, pixel and audio checks pass; concise evidence report |
 
 For premium, assess real-footage needs after speech freeze even if none are accepted; record search outcomes or editorial/access reasons. Classic searches only where footage use is planned. Never require a clip quota.
-Create scenes when meaning changes, not per subtitle page. Use footage for concrete actions, diagrams for mechanisms, and full-frame presenter for judgments/handoffs/close. Premium PiP omission is a readability exception recorded in EDL, not a general optional continuity effect.
-Record each visual asset's path, dimensions, placement and lifetime. Bound classic overlays to their content with alpha outside; opaque full-frame visuals belong to premium. Keep caption lane and face clear; simplify content instead of crowding.
+Create scenes when meaning changes, not per subtitle page. Use footage for concrete actions, diagrams for mechanisms, and full-frame presenter for judgments/handoffs/close. For diagram-only explanations, premium PiP omission is a readability exception recorded in EDL. Stock-video scenes always use the stock-only treatment above, with `pip: false` recorded in the EDL.
+Record each visual asset's path, dimensions, placement and lifetime. Bound classic information overlays to their content with alpha outside; full-frame stock footage follows the stock-only exception in both modes, while other opaque full-frame visuals belong to premium. Keep caption lane and face clear; simplify content instead of crowding.
 Remotion derives frames from absolute millisecond timestamps; use the manifest contract. It places HyperFrames assets without recreating their internals. Layer source/background → visual assets → premium PiP → captions/marks; mix sounds once.
 
 ## Local revisions and economical reads

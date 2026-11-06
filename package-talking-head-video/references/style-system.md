@@ -53,7 +53,7 @@ Ink and Paper remain the main reading surfaces. Add variety through colored head
 - **Process:** index chips and one directional relationship; avoid ornamental flowcharts.
 - **Conclusion:** reuse the opening signal motif and remove secondary decoration.
 
-Keep eyes, nose, mouth, hands, products, and captions protected. Adapt geometry to verified low-information regions rather than forcing a fixed corner. Classic keeps the moving full-frame presenter and original background visible: all information cards, screenshots, photographs, and diagrams float over the footage. Never replace it with a full-screen card, dark canvas, enlarged screenshot, or PiP layout. If space is insufficient, simplify the information, show a relevant screenshot detail, sequence smaller cards, or omit the graphic rather than covering the shot. Full-screen visual scenes belong to premium-v2 unless explicitly requested otherwise.
+Keep eyes, nose, mouth, hands, products, and captions protected. Adapt geometry to verified low-information regions rather than forcing a fixed corner. The user-approved stock-video exception is defined in [B-roll](broll-sourcing.md): footage plays alone, without the actual presenter or PiP. Outside those stock scenes, classic keeps the moving full-frame presenter and original background visible: all information cards, screenshots, photographs, and diagrams float over the footage. Never replace it with a full-screen card, dark canvas, enlarged screenshot, or PiP layout. If space is insufficient, simplify the information, show a relevant screenshot detail, sequence smaller cards, or omit the graphic rather than covering the shot. Full-screen visual scenes belong to premium-v2 unless explicitly requested otherwise.
 
 ## Opening
 
