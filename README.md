@@ -18,9 +18,20 @@
 
 「精剪视频2.1」是独立实验分支，只在明确选择时使用。少量信息放在人物旁的实际空闲区域，保留原始画面和完整真人；复杂图解或空间不足时可采用2.0全屏解释。参考的是用户截图中“人物居中、信息在两侧”的位置关系，保留既有黑金视觉，不复制截图中的作者、内容或社交平台界面。具体规则与验收见 [2.1实验规范](package-talking-head-video/references/premium-v2.1-experimental.md)。
 
-实验保留在 `experiment/premium-v2.1`，不会自动合入 `main`；普通“精剪视频”仍使用2.0。若后续验证不合适，可将本机 skill 恢复为 `main` 版本，再单独删除实验分支。当前仅建立规则，尚未以实际2.1视频验证视觉效果。
+2.1 的工作流已收录在 `main`。普通「精剪视频」默认使用 2.0，明确说「精剪视频 2.1」才会启用实验模式。
 
 2.1在分镜阶段还会标出每个产品和人物的首次提及，准备对应的产品图（含官方logo或应用图标）或真实人物图，先展示候选给用户确认。找不到正确素材时请用户上传；全部必要图片确认或由用户明确豁免后，才进入视觉制作和最终时间线合成。确认后的图片只在整条视频首次提及时作为悬浮信息卡展示，第二次及之后不再展示；简称、别名和不同称呼按同一个对象计数，换章节也不重新展示。
+
+## 封面制作
+
+**简洁剪视频、精剪视频和精剪视频 2.1** 的完整交付都必须包含一张通过验收的配套封面，除非用户明确要求省略。封面默认用 **3:4 竖版**，视频画幅按源素材处理。
+
+1. **本地抽取实拍帧。** 对比停顿和句尾附近的画面，优先选眼睛睁开、眉眼和嘴部放松的表情。保存原始帧和时间点。
+2. **按题材设计封面。** 选一个能讲清主题的道具或场景，再决定配色和标题位置。例如讲 AI 工作流，可以用任务单、回放条和验收印章把「交代任务 → 核对结果」串起来。给人物面部和标题各留出清楚的空间。
+3. **用内置 ImageGen 生成。** 实拍帧作为人物参考，另外标明主题素材或风格参考的用途，并给出准确标题、换行和封面比例。ChatCut 用于口播清理，封面出图由 ImageGen 完成。
+4. **检查并交付。** 对照实拍帧检查人物辨识度和表情，在手机缩图上核对标题、主题道具和人脸是否清楚。保存封面、实拍帧及时间点、生成提示词。
+
+只修改封面时，可以单独交付新版封面。完整规则见[封面工作流](package-talking-head-video/references/cover.md)。
 
 ## 工具分工与工作流
 
@@ -31,7 +42,8 @@
 | 时间线冻结 | Agent | 确认清理后的真人素材，建立共享字幕与场景清单（EDL） |
 | 视觉制作 | HyperFrames | 根据文案拆场景，制作信息卡、图解及其内部动画 |
 | 最终合成 | Remotion | 管理画布、帧率、场景顺序、真人、字幕、视觉素材和声音 |
-| 验收与交付 | Agent 与各工具 | 检查真实画面、清晰度、字幕、音画同步，并生成配套封面 |
+| 封面制作 | 本地抽帧、内置 ImageGen | 选实拍参考帧，按题材生成封面并检查手机缩图 |
+| 验收与交付 | Agent 与各工具 | 检查真实画面、清晰度、字幕、音画同步和配套封面 |
 
 素材流程：**ChatCut 清理并冻结口播 → HyperFrames 拆分镜、确定素材需求 → 优先用 Pixabay 搜索视频候选 → 查看实际片段并核对来源与授权 → 下载和截取 → HyperFrames 包装 → Remotion 合成**。两种模式播放视频素材时均直接展示素材，保持比例，不展示真人；口播声音与字幕可继续。找不到合适素材时，保留真人或图解，不硬塞镜头。
 
@@ -54,7 +66,7 @@ Pixabay API 密钥通过本机环境变量 `PIXABAY_API_KEY` 提供，不要写�
 1. 点击仓库的 **Code → Download ZIP**，解压。
 2. 将其中完整的 `package-talking-head-video` 文件夹放入 Codex 的 `skills` 目录。默认位置是 `~/.codex/skills/`；设置了 `CODEX_HOME` 时，使用对应目录下的 `skills/`。
 3. 确认目录为 `skills/package-talking-head-video/SKILL.md`，避免多嵌套一层仓库文件夹。
-4. 安装并配置 ChatCut、HyperFrames 和 Remotion 对应的工具或插件、配套 Skills，以及必要的运行环境。下载本仓库不会自动安装这些依赖。
+4. 安装并配置 ChatCut、HyperFrames 和 Remotion 对应的工具或插件、配套 Skills，以及必要的运行环境。完整包装还需要可用的内置 ImageGen。下载本仓库不会自动安装这些依赖。
 5. 在新的会话中提供视频素材并调用 Skill。
 
 已有同名 Skill 时，先备份并比较差异，避免覆盖自己的修改。
@@ -100,7 +112,7 @@ Pixabay API 密钥通过本机环境变量 `PIXABAY_API_KEY` 提供，不要写�
 完整包装任务包含：
 
 - 最终 MP4 与一张配套封面；
-- 封面选用的真人原始帧及时间点；
+- 封面选用的真人原始帧、时间点和生成提示词；
 - 可编辑 Remotion 工程；
 - 清理后的 ChatCut 项目或真人视频；
 - 校正后的字幕数据和场景清单；
@@ -118,6 +130,7 @@ Pixabay API 密钥通过本机环境变量 `PIXABAY_API_KEY` 提供，不要写�
 | [broll-sourcing.md](package-talking-head-video/references/broll-sourcing.md) | 素材搜索、片段核对、来源授权记录与合成 |
 | [premium-v2.md](package-talking-head-video/references/premium-v2.md) | 2.0 黑金版、场景设计与真人节奏 |
 | [premium-finishing.md](package-talking-head-video/references/premium-finishing.md) | 精剪音效、强调色和微动画 |
+| [cover.md](package-talking-head-video/references/cover.md) | 三个模式共用的 ImageGen 封面制作与验收流程 |
 | [quality-checklist.md](package-talking-head-video/references/quality-checklist.md) | 成片与封面验收 |
 | [color-pipeline.md](package-talking-head-video/references/color-pipeline.md) | HDR / SDR 与色彩处理 |
 | [aroll-download.md](package-talking-head-video/references/aroll-download.md) | 清理后素材下载与完整性确认 |
