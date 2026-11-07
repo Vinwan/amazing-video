@@ -7,7 +7,7 @@ description: Edit Chinese talking-head videos using ChatCut cleanup, HyperFrames
 
 ## Scope and mode first
 
-Determine the requested task before loading tool skills. Diagnosis is read-only; captions-only stops after verified captions; cover-only never rerenders the video. Full packaging includes the matching cover.
+Determine the requested task before loading tool skills. Diagnosis is read-only; captions-only stops after verified captions; cover-only never rerenders the video. Full packaging in classic, premium-v2, and premium-v2.1-experimental must complete the same [matching cover workflow](references/cover.md) before delivery. Skip it only when the user explicitly excludes a cover.
 There are two stable modes and one opt-in experimental branch; persist `editMode` in DESIGN.md and the EDL:
 
 | Request | editMode | Visual authority |
@@ -52,7 +52,7 @@ Honor each tool skill's prerequisites. Do not preload every plugin merely becaus
 | Author visuals | HyperFrames and CLI skills; selected visual mode; project DESIGN.md from assets/DESIGN.template.md | Settled hero layout first, then deterministic animations; validate/inspect assets |
 | Compose | Remotion router and only applicable create/markup/captions/multimedia/render skills; [captions](references/captions.md) when caption work is needed | One canonical timeline; correct alpha, trim, placement, captions and audio |
 | Premium finishing | [Finishing](references/premium-finishing.md) before sound/highlights/micro-animation decisions | Semantic restrained SFX and actual rendered emphasis; no implied music |
-| Cover | [Cover](references/cover.md), selected source frame and saved reference; applicable image skill | Planned, produced and visually accepted cover; no video restyle |
+| Cover (all three modes) | [Cover](references/cover.md), local source frame and saved reference; built-in imagegen skill | Topic-led cover generated, inspected at full size and phone-grid size, and saved with its source frame and prompt |
 | Acceptance | [Checklist](references/quality-checklist.md), selected mode's acceptance items | Structural, pixel and audio checks pass; concise evidence report |
 
 For premium, assess real-footage needs after speech freeze even if none are accepted; record search outcomes or editorial/access reasons. Classic searches only where footage use is planned. Never require a clip quota.
@@ -81,6 +81,6 @@ A text-only design change does not justify regenerating media or re-searching st
 ## Acceptance and delivery
 
 The checklist is the acceptance authority; mode references define style, not a competing technical standard. Inspect actual composed opening, dense text, important footage/action, scene edges, presenter returns and ending. Compare original-detail source/intermediate/final samples for face/hair/glasses; diagnose the first stage where degradation occurs.
-Cover acceptance is separate from video acceptance. Preserve dimensions and authentic logos; do not infer relationships from decorative brand proximity.
+Cover acceptance is a separate delivery gate in all three modes. Verify the cover against its real source frame and at phone-grid size. Preserve dimensions and authentic logos; do not infer relationships from decorative brand proximity.
 For full packaging deliver final MP4, matching cover and source frame/time, editable Remotion, cleaned ChatCut project or A-roll, corrected caption data, EDL, HyperFrames sources/assets, source ledger/credits and sound cues when used, plus a concise validation summary.
 Diagnosis returns evidence, cause, prioritized fixes and explicit confirmation that no video was regenerated. Report partial results and blockers accurately.

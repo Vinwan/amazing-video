@@ -65,16 +65,19 @@
 
 ## Cover acceptance
 
+Full packaging in classic, premium-v2, and premium-v2.1-experimental requires this check unless the user explicitly excludes the cover. Verify the local frame and timestamp, ImageGen output for new or redesigned covers, and saved generation prompt.
+
 Record each applicable item below with pass/fail and brief visual evidence in the project's validation report; explain not-applicable items. Inspect the actual final image, not only the prompt or layout code. Resolve failures before declaring the cover complete, including after revisions. Do not replace this review with a single “size correct / face clear” summary.
 
 - DESIGN.md contains the cover plan, including the inspected cover reference, source frame/time, headline, portrait placement, background, topic assets and supported relationships.
 - The final image is compared beside the approved reference and source frame; the established cover composition has not been replaced by the video's black-gold styling, an oversized indoor screenshot, or a title-card layout unless explicitly requested.
 - Source likeness is checked in the result: face, glasses, hair, clothing and expression remain faithful. Generated product illustrations are distinguishable from documentary product imagery.
+- The chosen source frame has a calm, natural expression at thumbnail size, with open eyes and a relaxed mouth. Compare alternate frames before accepting a tense speaking expression.
 
 - A matching screenshot-led cover is delivered with the video; the selected frame comes from this video's A-roll, the user's face is recognizable and unobscured, and the short title reads clearly at thumbnail size.
 - The cover headline matches the video, its source frame/timestamp is saved, and any cover-only crop leaves the video master unchanged.
 - The portrait is scaled/repositioned to leave a visible gap below the headline; the entire hair silhouette, ears, glasses, and face are clear of text, cards, glow, and title-background fades.
-- The background fits the topic; technology covers may use restrained grids, data connections, and dimensional brand elements while the headline region stays quiet.
+- The background color and setting fit the video's specific story. At phone-grid size, the main visual conveys the subject and the headline and face stay clear.
 - Relevant company/product elements improve recognition and stay secondary to title and person; no unrelated logos are added as decoration. Names, logos, and proportions have been inspected.
 - Contextual ecosystem brands are not presented as donors, partners, endorsers, owners, or compatible products without source support; any relationship symbol conveys the actual claim.
 - The final cover has been checked at phone-grid thumbnail size for headline readability, likeness, and uncluttered brand placement; source frame, revision, and editable layout or prompt are retained.
