@@ -44,8 +44,8 @@ Clear, warm editorial information design. The speaker leads; graphics expose the
 - Secondary brand elements: [relevant names/logos; placement away from head/title]
 - Asset provenance: [official product/brand assets or accurate wordmarks; identify illustrative imagery]
 - Relationship symbols and evidence: [actual supported relation; contextual brands separate]
-- Output: [3:4 final image; version; editable layout or image-edit prompt]
-- Acceptance evidence: [validation report path; compare final to reference/source at full size and thumbnail size; resolve each failed cover check]
+- Output: [3:4 portrait and 4:3 landscape by default, or requested ratios; filenames, pixel dimensions and editable layout or generation prompt per version]
+- Acceptance evidence: [validation report path; verify each final ratio and compare to reference/source at full size and thumbnail size; resolve each failed cover check]
 
 ## Safe Area
 - Canvas and display orientation: [actual dimensions]

@@ -35,4 +35,8 @@ Built-in ImageGen is the approved cover generator, separate from ChatCut speech 
 
 ### Delivery
 
-Use one finished 3:4 portrait cover by default, unless the user requests another size or alternatives. Save the selected source frame/timestamp, final image, and editable layout or generation prompt when applicable. Keep revisions as versioned siblings until the user requests replacement. Cover-only cutout, resizing, background replacement, and cropping do not authorize changes to the video master's framing.
+For full packaging in all three modes, deliver both a finished 3:4 portrait cover and a finished 4:3 landscape cover by default (width:height). Follow explicit requests for one version, different ratios, or no cover. For a cover-only request, deliver the requested versions.
+
+Recompose each version for its canvas. Use the same exact title, calm source frame, topic visual, and palette across the two versions. When making a landscape companion to an approved portrait cover, provide the portrait cover as the design reference and the real frame as the separate identity reference for ImageGen. Reflow the title and reposition the subject and topic elements to fit the wider canvas; avoid stretching or directly cropping the finished portrait cover to fit. Check actual pixel dimensions for the exact ratio and review each final at full size and phone-grid size.
+
+Save the selected source frame/timestamp, each final image with its ratio or orientation in its filename, and the editable layout or generation prompt for each version. Keep revisions as versioned siblings until the user requests replacement. Cover-only cutout, resizing, background replacement, and cropping do not authorize changes to the video master's framing.

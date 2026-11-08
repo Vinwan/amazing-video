@@ -74,7 +74,7 @@ Record each applicable item below with pass/fail and brief visual evidence in th
 - Source likeness is checked in the result: face, glasses, hair, clothing and expression remain faithful. Generated product illustrations are distinguishable from documentary product imagery.
 - The chosen source frame has a calm, natural expression at thumbnail size, with open eyes and a relaxed mouth. Compare alternate frames before accepting a tense speaking expression.
 
-- A matching screenshot-led cover is delivered with the video; the selected frame comes from this video's A-roll, the user's face is recognizable and unobscured, and the short title reads clearly at thumbnail size.
+- The delivered set contains 3:4 portrait and 4:3 landscape covers by default, or the set the user explicitly requested. Verify the exact width:height ratio from each final file's pixel dimensions. Review each cover at full size and phone-grid size; the landscape composition preserves the headline, complete head, and topic visual in its wider layout.
 - The cover headline matches the video, its source frame/timestamp is saved, and any cover-only crop leaves the video master unchanged.
 - The portrait is scaled/repositioned to leave a visible gap below the headline; the entire hair silhouette, ears, glasses, and face are clear of text, cards, glow, and title-background fades.
 - The background color and setting fit the video's specific story. At phone-grid size, the main visual conveys the subject and the headline and face stay clear.
