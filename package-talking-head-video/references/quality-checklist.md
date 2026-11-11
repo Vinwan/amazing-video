@@ -25,6 +25,7 @@
 
 ## Transcript and captions
 
+- Verify both spoken instances of 「说白了」 when Will's introduction is present, the exact name `Will说白了`, and the second occurrence leading the next caption.
 - Names, numbers, dates, and domain terms corrected.
 - Empty/repeated/post-silence hallucinations removed.
 - Caption pages follow speech and remain readable for their duration.
@@ -62,6 +63,7 @@
 - Premium-v2 circular speaker picture-in-picture stays stable, remains recognizable, avoids evidence and captions, and matches the frozen speech with only one dialogue audio stream. Premium-v2 defaults to this treatment during explanations; any omission has a readability reason recorded in the EDL. Classic retains the full-frame speaker instead.
 - Oversized emphasis copy is short, selective, and visually separate from the ordinary caption lane.
 - Diagram nodes and connectors reveal in causal order; the explanation is not dumped onto the frame at once.
+- For a connected card stack or a grid with deferred answers, inspect just before and after each spoken cue. Verify that prior entries hold in their positions and future text remains concealed until its cue.
 
 ## Cover acceptance
 

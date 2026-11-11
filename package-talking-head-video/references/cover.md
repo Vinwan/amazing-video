@@ -23,6 +23,8 @@ Built-in ImageGen is the approved cover generator, separate from ChatCut speech 
 
 ### Choose the scene and palette for the story
 
+- When the brief asks to keep the filmed background, retain recognizable room details and blur them behind the sharp portrait. Place transparent technology elements around the subject and title, with authentic brand imagery where relevant. Check both independently composed ratios at thumbnail size.
+
 - Let the video's specific premise drive the setting. A guide or workflow can use a workbench, field manual, or stack of steps. A tool selection can show a small collection of app icons with a shared organizing device. A news or market story can feature one evidence object and a chart or directional cue. A creative process can put the resulting world or object on display. A language or audience shift can use a sign, ticket, or other recognizable cue to the transition.
 - Choose one dominant background family, a readable title color, and one primary accent that works with the portrait's light. Examples include pine green with amber for a guide, burgundy with mint for a curated tool list, charcoal with yellow for an urgent event, electric blue for a live systems experiment, warm amber for handcrafted scenes, and deep teal with orange for travel or reach. These are options. Broad labels like “AI” do not select the color or require a grid.
 - Give the scene depth with a quiet background, one clear topic object, and the actual presenter. Add props only where they help the viewer identify the subject. Real screenshots, editorial illustrations and brand marks can coexist when they have distinct roles. Keep decorative marks below the title and face in the visual hierarchy.

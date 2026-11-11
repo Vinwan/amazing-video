@@ -23,7 +23,11 @@ Card count is a cue, not the decision by itself: two dense tables are not sparse
 
 Plan cards for consequential spoken numbers, short comparisons, and explanations that benefit from a visual cue. Keep the wording brief and reveal each item with the spoken point. Retain units, scope, and qualifiers that change the meaning, including whether a figure is an estimate or a forecast.
 
-Use the approved dark translucent capsule: a thin luminous edge, soft highlight, and compact typography. A small circular icon can signal the subject. Use cream for the main text and the existing semantic accent colors for key values. Stagger related capsules when the narration introduces them one at a time.
+Use the approved dark translucent capsule with a thin luminous edge, soft highlight and compact typography. A small circular icon can signal the subject. Use cream for the main text and the existing semantic accent colors for key values. A thin lavender-to-blue-violet gradient edge is an approved variant for projects that call for purple glass.
+
+For a connected list, ordered steps or a set of closing questions, assign fixed rows from top to bottom. Start each card at the spoken word or phrase that introduces that item. Keep the previous rows visible in their original positions until the group ends. Size and inspect the completed stack before using it over the presenter. If the stack does not fit the available space at a legible size, use a separate explanation canvas with the same reveal order.
+
+When the narration sets up unanswered items in a grid or checklist, show the empty slots with neutral placeholders if the structure matters. Reveal each slot's text only at its own spoken cue. Keep earlier reveals visible and future labels concealed. Check all intermediate states on the final timeline.
 
 These text cards explain the narration. First-mention product/person images follow the separate approval workflow below and display the approved image alone, including any original text in the image.
 
@@ -53,7 +57,7 @@ If the first mention occurs during the opening title, first adjust the title’s
 - Inspect source frames across the whole selected passage, including the widest gesture. Choose the clearest low-information region for each passage. Portrait footage can use open space above the presenter; landscape footage can use clear space to the left or right. Treat orientation as a starting point and verify the location against the actual composition throughout the card’s hold. Protect the complete head, eyes, mouth, meaningful gestures, products and the fixed caption lane.
 - Information floats in local side regions with transparency outside its content. Use the existing cream/gold/data/risk colors and a restrained local Ink/Paper support when contrast needs it. No opaque full-canvas panel, global darkening/blur, or full-width card backdrop for a sparse beat.
 - Make the evidence large enough to read on a phone while keeping the speaker recognizable and visually primary. A single number retains its qualifier and unit. Avoid duplicating the whole subtitle sentence in a second large heading.
-- Prefer one coherent group and at most one or two brief cards visible together. For a short process, keep node identities and connector direction stable; introduce the current step at its spoken onset. If two-sided evidence crowds the person, reduce or sequence it.
+- Prefer one coherent group. A connected stack can retain more than two brief rows when the complete stack fits a verified free region at a readable size. For a flow, keep node identities and connector direction stable. If two-sided evidence crowds the person, reduce or sequence it.
 - HyperFrames owns the bounded graphic and its internal reveal; Remotion places it over the uninterrupted A-roll. Export real alpha outside the graphic. For a transparent video, enable alpha-aware compositing in Remotion (for example `OffthreadVideo transparent`) and inspect the result for a black/opaque rectangle.
 - Keep motion restrained: short settle entrance, stable reading hold, clear exit at the end of the thought. No drifting, constant pulsing, or decorative movement around the face. Sequence ordinary information cards around the opening title. Required first-mention cards follow their approved first-mention timing and layout above.
 

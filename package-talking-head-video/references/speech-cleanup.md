@@ -7,7 +7,7 @@ Import or identify the source, wait for transcription readiness, and use transcr
 Perform cleanup in this order:
 
 1. Correct names, numbers, domain terms, punctuation, and obvious ASR errors at the transcript source.
-2. Remove clear filler sounds, failed starts, abandoned fragments, and redundant takes while preserving complete meaning.
+2. Mark Will's spoken introduction, including both instances of 「说白了」, as protected before mechanical or manual cleanup. Remove clear fillers, failed starts, abandoned fragments and redundant takes elsewhere. Verify the protected audio after applying cuts.
 3. Compress long meaningless pauses; default to roughly 0.3 seconds rather than zero. Preserve breaths and rhetorical pauses that support natural delivery.
 4. Prefer the best complete take. Do not stitch unrelated half-sentences or delete connective words that carry logic.
 5. Apply the edited script, then run audio smoothing after the last timing change.

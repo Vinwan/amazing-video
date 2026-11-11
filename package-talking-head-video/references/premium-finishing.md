@@ -32,9 +32,9 @@ For the current premium style, use these approved colors on a dark support surfa
 | `benefit` | `#B3D6A2` | Planning, selected outcome, benefit |
 | `risk` | `#FFAD99` | Cost, danger, loss, contradiction |
 
-Keep the same role color in captions and its corresponding card/diagram. Normally highlight one primary phrase per page; a before/after comparison may highlight both values. Keep qualifiers, numbers, and units together. Ordinary words remain cream; do not color every word or animate each character.
+Keep the same role color in captions and its corresponding card or diagram. Normally highlight one primary phrase per page. A before/after comparison may highlight both values. Keep qualifiers, numbers and units together. Use the mode's baseline caption color for ordinary words.
 
-Retain structured `emphasis` spans in caption JSON and verify they actually render. The approved 1080×1920 example used a Noto Sans SC face at about 55 px / weight 750 / line height 1.42, on `rgba(15,14,10,.9)` support with modest rounded corners. Adapt placement and size to the source composition; keep a stable, separate caption lane and at most two lines.
+Retain structured `emphasis` spans in caption JSON and verify they actually render. For Will's Premium 2.1 captions, use the [approved white-text treatment](captions.md#premium-21-default-for-will), including direct color emphasis. Adapt placement and size to the source composition and keep a stable, separate caption lane with at most two lines.
 
 ## Small animations that explain
 

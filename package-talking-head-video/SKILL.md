@@ -27,6 +27,7 @@ Latest explicit user instructions override defaults. Proposed color/geometry wor
 ## Responsibilities and invariants
 
 - ChatCut owns retained speech, cleanup, final transcript and lip sync. Freeze verified A-roll before downstream timing; speech changes invalidate affected captions/scenes.
+- Protect Will's full recorded introduction before filler and retake cleanup. Use the exact name and cue split in [shared captions](references/captions.md).
 - HyperFrames owns visual interpretation, graphic layout and internal animation. Remotion owns master FPS/canvas, placement, source offsets, captions, mix and final render. Never implement the same animation in both.
 - Preserve the original file, display-conformed aspect ratio, complete A-roll framing, proportions and natural skin color. Only premium's localized circular PiP mask is an exception; full-frame returns stay intact. A different-ratio deliverable needs explicit authorization and a separate derivative.
 - Use delivery-grade media, never upscale a preview proxy when a better source exists. Preserve detail with a lossless/visually lossless handoff and lossless frame capture; follow the delivery settings in [source fidelity](references/source-fidelity.md). Verify actual pixels and decoded media, not just export settings.

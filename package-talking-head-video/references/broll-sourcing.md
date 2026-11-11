@@ -8,6 +8,7 @@ Approved on 2026-11-01 as the default for future “精剪视频”. Reference d
 
 - Use relevant real footage for visible actions and concrete scenes; retain diagrams for abstract relationships, branching, model fallback, and value comparisons. Avoid making every explanation the same text-card stack.
 - Cut to footage at the phrase that introduces the action. Reveal supporting information at the corresponding spoken detail, hold for reading, and return to the presenter when interpretation or advice carries the beat. Do not apply a fixed stagger or interval across unrelated scenes.
+- Use an official release, documentation image or product screen when the picture needs to substantiate a specific claim. When a generic office photo only illustrates a narrated activity or industry, prefer relevant moving footage with an observable action, such as someone reviewing financial records for a finance example. Record the footage as illustrative in the ledger.
 - Keep the established full-frame presenter/title opening, synchronized circular presenter during explanation, full-frame returns, black-gold default, semantic highlights/SFX, and matching cover.
 - Prefer actual operation footage over generic locks, code rain, hacker silhouettes, or unrelated office activity. If the precise interface is unavailable, combine relevant real activity with a clearly labeled illustrative interface; record the limitation. Never present stock as the named malware's actual execution or as a confirmed victim.
 
