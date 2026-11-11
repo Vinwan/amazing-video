@@ -1,6 +1,6 @@
-# Premium 2.0 — visual journey
+# Premium black-gold foundations and legacy 2.0
 
-Use for “精剪视频”, “优美视频”, or an explicit 2.0 request. Keep classic behavior available under its existing triggers.
+Use with [Premium 2.1](premium-v2.1.md) for new premium projects, and directly for existing `premium-v2` projects or explicit legacy 2.0 requests. The user promoted validated 2.1 to the default on 2026-11-11. For new premium work, apply its full-frame presenter overlays to sparse information and the complex explanation rules below when density or usable space calls for a canvas.
 
 ## Approved sample and evidence
 
@@ -37,13 +37,13 @@ Use `speaker -> explanation -> speaker interpretation -> next explanation -> spe
 
 Before rendering, review any long graphics-only passage for a suitable speaker return at its next semantic boundary. Keep an uninterrupted explanation when breaking it would harm comprehension, and record that scene's purpose in the EDL. Speaker appearances should last for a readable, complete thought rather than flash as one-second inserts.
 
-Keep A-roll returns synchronized to the corresponding passage of the frozen cleaned source. Continue the same speech across visual switches without replaying, replacing, or retiming words. Preserve the existing source framing and natural skin color; do not force the dark/gold graphic palette onto the real footage. During explanation sections, default to a smaller circular picture-in-picture of the actual speaker over the explanatory background, following the layout contract below. Retain full-frame speaker beats.
+Keep A-roll returns synchronized to the corresponding passage of the frozen cleaned source. Continue the same speech across visual switches without replaying, replacing, or retiming words. Preserve the existing source framing and natural skin color; do not force the dark/gold graphic palette onto the real footage. During complex explanation sections using an explanatory canvas, default to a smaller circular picture-in-picture of the actual speaker, following the layout contract below. Sparse 2.1 information uses full-frame presenter overlays under the 2.1 reference. Retain full-frame speaker beats.
 
 Stock-video scenes are an exception: show only the stock footage, with no actual-presenter layer or circular PiP. Preserve the narration and ordinary captions; record `pip: false` in the EDL and verify entries/exits for presenter leakage. The circular treatment below applies to non-stock explanation backgrounds.
 
 ## Circular speaker over explanation backgrounds
 
-For future premium-v2 videos, use the actual cleaned speaker in a circular picture-in-picture while the background shows the content being explained: product screenshots, evidence, diagrams, comparisons, or demonstrations. This is the user-approved default for explanation beats, not a requirement inherited from the reference sample. Keep opening, key judgments, and ending on full-frame A-roll when their performance carries the argument. Do not retroactively revise an already approved delivery unless requested.
+For complex explanation canvases in premium-v2.1, and explanation scenes in legacy premium-v2 projects, use the actual cleaned speaker in a circular picture-in-picture while the background shows the content being explained: product screenshots, evidence, diagrams, comparisons, or demonstrations. This is the user-approved default for explanation beats, not a requirement inherited from the reference sample. Keep opening, key judgments, and ending on full-frame A-roll when their performance carries the argument. Do not retroactively revise an already approved delivery unless requested.
 
 - HyperFrames authors the explanation background and reserves a safe region for the circle. Remotion composites the synchronized speaker above that background and below captions. Keep one authoritative dialogue audio stream; mute duplicate video layers.
 - Use the corresponding absolute time in the frozen cleaned A-roll. An explanation's circle must show the same spoken moment, with no restarted clip, lip-sync drift, or timing changes.

@@ -1,7 +1,7 @@
 # Video Packaging Project
 
-- editMode: [classic / premium-v2]
-- Visual authority: [classic: style-system.md / premium: premium-v2.md and premium-finishing.md]
+- editMode: [classic / premium-v2.1; preserve recorded legacy modes for revisions]
+- Visual authority: [classic: style-system.md / premium: premium-v2.1.md, premium-v2.md and premium-finishing.md]
 - Use only the selected mode's tokens; cover design remains separate.
 
 ## Style Prompt
@@ -22,16 +22,17 @@ Clear, warm editorial information design. The speaker leads; graphics expose the
 
 ## Narrative Modes
 - A-roll: [hook, opinions, transitions, breathing room]
-- Explainer treatment: [classic: bounded floating cards/screenshots over continuous full-frame A-roll; premium-v2: relationship/evidence canvas]
-- Speaker picture-in-picture: [premium-v2 only: safe corner, diameter, omit conditions; classic: none]
+- Explainer treatment: [classic: bounded floating cards/screenshots over continuous full-frame A-roll; premium-v2.1: full-frame presenter with sparse capsules; relationship/evidence canvas for complex content]
+- Speaker picture-in-picture: [premium complex explanations only: safe corner, diameter, omit conditions; sparse presenter overlays: none; classic: none]
 - Emphasis phrase: [2–6 characters, maximum frequency]
 
 ## Explainer Components
 - Relationship map: [node and connector treatment]
 - Cycle: [active segment and direction treatment]
-- Evidence image: Paper border + context label
+- Evidence image: [approved product/person image alone at its first mention; explanatory evidence may use a Paper border and context label]
+- Entity approval plan: [entity-card-manifest.json; aliases, first mentions, exact images/crops, sources and user decisions]
 - Comparison bars: neutral baseline + semantic accent on decisive values
-- Background: [classic: unchanged source footage, Ink/Paper inside cards only; premium-v2: explainer canvas]
+- Background: [classic: unchanged source footage, Ink/Paper inside cards only; premium-v2.1: original footage for sparse overlays, explainer canvas for complex content]
 
 ## Matching Cover
 - Inspected cover reference: [path; composition features to retain; separate from video variant]
@@ -61,7 +62,7 @@ Clear, warm editorial information design. The speaker leads; graphics expose the
 ## What NOT to Do
 - Do not cover facial features.
 - Do not imitate a named creator or replace the house grammar with a reference style.
-- Do not use glassmorphism, neon glow, ornamental particles, or random accent colors.
+- Use approved dark translucent capsules with restrained edge light for premium sparse information; keep accents semantic and motion purposeful.
 - Do not use color filters to repair incorrect HDR/SDR conversion.
 - Do not split numbers from units.
 - Do not show redundant graphics simultaneously.

@@ -1,24 +1,25 @@
 ---
 name: package-talking-head-video
-description: Edit Chinese talking-head videos using ChatCut cleanup, HyperFrames shot planning and visuals, Pixabay stock footage, and Remotion assembly. 剪口播视频 or 简洁剪视频 selects classic floating overlays; 精剪视频 or 精剪版 selects established black-gold 2.0; explicit 精剪视频2.1 selects an experimental presenter-side treatment for sparse information. Also use for captions and source-quality diagnosis.
+description: Edit Chinese talking-head videos using ChatCut cleanup, HyperFrames shot planning and visuals, Pixabay stock footage, and Remotion assembly. 剪口播视频 or 简洁剪视频 selects classic floating overlays; 精剪视频, 精剪版, and 精剪视频2.1 select validated black-gold 2.1 with full-frame presenter information cards and complex visual explanations. Also use for captions and source-quality diagnosis.
 ---
 
 # Package Talking-Head Video
 
 ## Scope and mode first
 
-Determine the requested task before loading tool skills. Diagnosis is read-only; captions-only stops after verified captions; cover-only never rerenders the video. Full packaging in classic, premium-v2, and premium-v2.1-experimental must complete the same [matching cover workflow](references/cover.md) before delivery. Default to both 3:4 portrait and 4:3 landscape covers (width:height); follow explicit requests for a different set or no cover.
-There are two stable modes and one opt-in experimental branch; persist `editMode` in DESIGN.md and the EDL:
+Determine the requested task before loading tool skills. Diagnosis is read-only; captions-only stops after verified captions; cover-only never rerenders the video. Full packaging in classic and premium-v2.1 must complete the same [matching cover workflow](references/cover.md) before delivery. Default to both 3:4 portrait and 4:3 landscape covers (width:height); follow explicit requests for a different set or no cover.
+There are two current modes. Persist `editMode` in DESIGN.md and the EDL. New premium projects use `premium-v2.1`.
 
 | Request | editMode | Visual authority |
 | --- | --- | --- |
 | 剪口播视频 / 简洁剪视频 / 简单剪视频 / 经典版 / 之前的方式 | classic | [Classic](references/style-system.md): continuous full-frame presenter; bounded floating cards, screenshots and clips only |
-| 精剪视频 / 精剪版 / 精剪视频黑金版 / 优美视频 / 2.0 | premium-v2 | [Premium](references/premium-v2.md): established black-gold treatment; explanation scenes default to synchronized circular actual-presenter PiP |
-| 精剪视频2.1 / 精剪2.1 / 2.1实验版 | premium-v2.1-experimental | [Experimental 2.1](references/premium-v2.1-experimental.md): inherits 2.0; sparse information sits beside the full-frame speaker |
+| 精剪视频 / 精剪版 / 精剪视频黑金版 / 优美视频 / 精剪视频2.1 / 精剪2.1 / 2.1 | premium-v2.1 | [Premium 2.1](references/premium-v2.1.md), with [black-gold foundations](references/premium-v2.md). Use full-frame presenter cards for sparse information and explanation canvases for complex content. |
 
-Match an explicit 2.1 request before generic “精剪视频”. Ordinary “精剪视频” still selects stable 2.0. Load the 2.1 reference only for that explicit choice or an existing project already marked 2.1; its sparse-information rules override the inherited 2.0 presentation for those scenes only. For 2.1 acceptance, its explicit mode/presentation exceptions take precedence over the shared checklist’s stable-mode wording; all shared technical checks still apply. Keep the experiment isolated and removable; do not edit stable 2.0 defaults to implement it.
+The user validated 2.1 and promoted it to the default premium workflow on 2026-11-11. Both “精剪视频” and “精剪视频2.1” select the same workflow. Load the 2.1 reference for every new premium project. Its density-based presentation rules govern sparse scenes, while the inherited foundations govern complex explanations.
 
-2.1 also requires a first-mention-only image plan for named products and people during initial storyboarding; the second and later mentions of the same entity (including aliases) do not trigger another card. Show the exact proposed images for user confirmation before visual production; if no matching image is found, request an upload. Follow the explicit approval gate in the 2.1 reference; it is an exception to the general no-routine-checkpoint guidance.
+For existing projects, preserve recorded `premium-v2` or `premium-v2.1-experimental` modes and their approved presentation unless the user requests migration. An explicit request for legacy 2.0 uses `premium-v2` and its reference. The old “2.1实验版” phrase is an alias for current 2.1 when creating a new project.
+
+2.1 also requires a first-mention-only image plan for named products and people during initial storyboarding; the second and later mentions of the same entity (including aliases) do not trigger another card. Show the exact proposed images for user confirmation before visual production; if no matching image is found, request an upload. Follow the explicit approval gate in [the 2.1 reference](references/premium-v2.1.md); it is an exception to the general no-routine-checkpoint guidance.
 
 Unspecified packaging defaults to classic. Revisions inherit a supported project's mode; ask which remaining mode to use for an unsupported legacy project. Do not silently blend or migrate modes.
 Latest explicit user instructions override defaults. Proposed color/geometry worksheets do not change the active style until the user approves them.
@@ -52,11 +53,11 @@ Honor each tool skill's prerequisites. Do not preload every plugin merely becaus
 | Author visuals | HyperFrames and CLI skills; selected visual mode; project DESIGN.md from assets/DESIGN.template.md | Settled hero layout first, then deterministic animations; validate/inspect assets |
 | Compose | Remotion router and only applicable create/markup/captions/multimedia/render skills; [captions](references/captions.md) when caption work is needed | One canonical timeline; correct alpha, trim, placement, captions and audio |
 | Premium finishing | [Finishing](references/premium-finishing.md) before sound/highlights/micro-animation decisions | Semantic restrained SFX and actual rendered emphasis; no implied music |
-| Cover (all three modes) | [Cover](references/cover.md), local source frame and saved reference; built-in imagegen skill | Each required cover generated, checked for exact ratio and inspected at full size and phone-grid size, and saved with its source frame and prompt |
+| Cover (both current modes) | [Cover](references/cover.md), local source frame and saved reference; built-in imagegen skill | Each required cover generated, checked for exact ratio and inspected at full size and phone-grid size, and saved with its source frame and prompt |
 | Acceptance | [Checklist](references/quality-checklist.md), selected mode's acceptance items | Structural, pixel and audio checks pass; concise evidence report |
 
 For premium, assess real-footage needs after speech freeze even if none are accepted; record search outcomes or editorial/access reasons. Classic searches only where footage use is planned. Never require a clip quota.
-Create scenes when meaning changes, not per subtitle page. Use footage for concrete actions, diagrams for mechanisms, and full-frame presenter for judgments/handoffs/close. For diagram-only explanations, premium PiP omission is a readability exception recorded in EDL. Stock-video scenes always use the stock-only treatment above, with `pip: false` recorded in the EDL.
+Create scenes when meaning changes, not per subtitle page. Use footage for concrete actions, diagrams for mechanisms, and full-frame presenter for judgments/handoffs/close. For sparse premium information, use full-frame presenter overlays under the 2.1 rules. For complex diagram-only explanations, premium PiP omission is a readability exception recorded in EDL. Stock-video scenes always use the stock-only treatment above, with `pip: false` recorded in the EDL.
 Record each visual asset's path, dimensions, placement and lifetime. Bound classic information overlays to their content with alpha outside; full-frame stock footage follows the stock-only exception in both modes, while other opaque full-frame visuals belong to premium. Keep caption lane and face clear; simplify content instead of crowding.
 Remotion derives frames from absolute millisecond timestamps; use the manifest contract. It places HyperFrames assets without recreating their internals. Layer source/background → visual assets → premium PiP → captions/marks; mix sounds once.
 
@@ -81,6 +82,6 @@ A text-only design change does not justify regenerating media or re-searching st
 ## Acceptance and delivery
 
 The checklist is the acceptance authority; mode references define style, not a competing technical standard. Inspect actual composed opening, dense text, important footage/action, scene edges, presenter returns and ending. Compare original-detail source/intermediate/final samples for face/hair/glasses; diagnose the first stage where degradation occurs.
-Cover acceptance is a separate delivery gate in all three modes. Verify the cover against its real source frame and at phone-grid size. Preserve dimensions and authentic logos; do not infer relationships from decorative brand proximity.
+Cover acceptance is a separate delivery gate in both current modes. Verify the cover against its real source frame and at phone-grid size. Preserve dimensions and authentic logos; do not infer relationships from decorative brand proximity.
 For full packaging deliver final MP4, matching covers and source frame/time, editable Remotion, cleaned ChatCut project or A-roll, corrected caption data, EDL, HyperFrames sources/assets, source ledger/credits and sound cues when used, plus a concise validation summary.
 Diagnosis returns evidence, cause, prioritized fixes and explicit confirmation that no video was regenerated. Report partial results and blockers accurately.

@@ -2,9 +2,9 @@
 
 ## Editing version
 
-- DESIGN.md and the EDL record classic or premium-v2 according to the user's wording; premium-v2 uses black-gold.
+- DESIGN.md and the EDL record classic or premium-v2.1 according to the user's wording. Both 精剪视频 and 精剪视频2.1 select premium-v2.1 with black-gold styling. Existing revisions may retain premium-v2 or premium-v2.1-experimental.
 - Classic retains moving full-frame A-roll and the original background except for the user-approved stock-only video scenes in references/broll-sourcing.md. Every information card, screenshot, photograph, or diagram is a bounded floating overlay (`mode: overlay`); no full-screen replacement, opaque full-canvas panel, globally darkened/blurred explainer background, or presenter PiP is used without an explicit user exception. Inspect the densest graphic frame as well as entries and exits.
-- Apply the house-style and human-reset checks below to classic. For premium-v2, use references/premium-v2.md for visual checks; shared fidelity, captions, export, and cover checks still apply.
+- Apply the house-style and human-reset checks below to classic. For premium-v2.1, use references/premium-v2.1.md and its inherited foundations for visual checks; legacy premium-v2 uses references/premium-v2.md; shared fidelity, captions, export, and cover checks still apply.
 - Premium-v2 includes meaningful full-frame appearances of the actual speaker, planned around the hook, judgments, breathing room, transitions, and close; picture-in-picture alone does not substitute for those beats. Verify the selected rhythm in the EDL and final playback without enforcing an arbitrary time ratio.
 
 ## Source and color
@@ -12,7 +12,7 @@
 - Source metadata inspected before conversion.
 - Display orientation resolved from rotation/display-matrix metadata, not encoded dimensions alone.
 - Source canvas, full framing, and aspect ratio preserved through proxies, timeline layout, composition, and export.
-- No crop, reframe, or aspect-ratio conversion performed except the localized premium-v2 PiP mask or an explicitly requested separate derivative; full-frame returns preserve the source framing.
+- No crop, reframe, or aspect-ratio conversion performed except the localized premium complex-explanation PiP mask or an explicitly requested separate derivative; full-frame returns preserve the source framing.
 - Speaker facial and body proportions and visible framing compared against the source after every canvas or proxy change.
 - Timeline A-roll asset dimensions and readiness checked against the intended export resolution.
 - Preview proxies clearly separated from delivery media; no reduced proxy is used in the final master when a higher-resolution source exists.
@@ -65,7 +65,7 @@
 
 ## Cover acceptance
 
-Full packaging in classic, premium-v2, and premium-v2.1-experimental requires this check unless the user explicitly excludes the cover. Verify the local frame and timestamp, ImageGen output for new or redesigned covers, and saved generation prompt.
+Full packaging in both current modes and legacy premium revisions requires this check unless the user explicitly excludes the cover. Verify the local frame and timestamp, ImageGen output for new or redesigned covers, and saved generation prompt.
 
 Record each applicable item below with pass/fail and brief visual evidence in the project's validation report; explain not-applicable items. Inspect the actual final image, not only the prompt or layout code. Resolve failures before declaring the cover complete, including after revisions. Do not replace this review with a single “size correct / face clear” summary.
 
