@@ -23,6 +23,8 @@ Built-in ImageGen is the approved cover generator, separate from ChatCut speech 
 
 ### Choose the scene and palette for the story
 
+- Follow this video's background instruction. A request to redesign the scene overrides a previous video's blurred-room treatment. Transparent technology elements should explain the topic (such as travel routes or an interface pane), remain subordinate to face/title and not create false documentary evidence.
+
 - When the brief asks to keep the filmed background, retain recognizable room details and blur them behind the sharp portrait. Place transparent technology elements around the subject and title, with authentic brand imagery where relevant. Check both independently composed ratios at thumbnail size.
 
 - Let the video's specific premise drive the setting. A guide or workflow can use a workbench, field manual, or stack of steps. A tool selection can show a small collection of app icons with a shared organizing device. A news or market story can feature one evidence object and a chart or directional cue. A creative process can put the resulting world or object on display. A language or audience shift can use a sign, ticket, or other recognizable cue to the transition.

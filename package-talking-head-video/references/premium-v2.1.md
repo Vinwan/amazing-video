@@ -33,6 +33,8 @@ These text cards explain the narration. First-mention product/person images foll
 
 ## First-mention product and person cards — required approval gate
 
+The presenter's own appearances and self-introduction are exempt: do not overlay a picture of Will himself. Record this standing user preference as `waived-by-user` where needed; it does not waive other named people. Approved entity cards show only the selected image (including text already within it), without added names, lower labels or sequence numbers. Preview/contact-sheet numbering is for review only.
+
 During the initial storyboard, identify every named product/app and person in the narration and reserve a floating image-card beat only at each entity’s first spoken mention in the whole video. Merge full names, short names, aliases and alternate spellings that refer to the same entity. The second and every subsequent mention must not replay, re-enter or create another product/person introduction card; a new scene or chapter does not reset the first-mention count. Use the final retained speech to confirm the earliest occurrence after cleanup, rather than anchoring to a deleted take.
 
 - Product/app: source a matching product image or interface image with its recognizable official logo/app icon. For a software product, a suitable official app icon/logo may itself be the image. Check the exact product/version; do not substitute a parent-company logo or an unrelated product merely because the names are similar.

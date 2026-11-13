@@ -1,5 +1,7 @@
 # Quality Checklist
 
+Use [视频交付核对清单](delivery-checklist.md) as the mandatory per-project execution record. This reference supplies the detailed checks behind that record; record applicable results and evidence, not an unchecked copy.
+
 ## Editing version
 
 - DESIGN.md and the EDL record classic or premium-v2.1 according to the user's wording. Both 精剪视频 and 精剪视频2.1 select premium-v2.1 with black-gold styling. Existing revisions may retain premium-v2 or premium-v2.1-experimental.
@@ -88,6 +90,8 @@ Record each applicable item below with pass/fail and brief visual evidence in th
 
 - Cleaned A-roll handoff is a complete, readable local file when local assembly requires it; a render status, preview, or download click alone is insufficient.
 - Downloaded file identity, byte count when supplied, duration, dimensions, and audio match the frozen ChatCut timeline; partial downloads are not used downstream.
+- Ordered source mapping and decoded video frame count match the frozen edit. Preserve each repeated source-frame occurrence at overlapping/reused cuts; container duration or audio duration alone cannot establish this. Follow [timeline integrity](timeline-integrity.md).
+- Source-to-handoff-to-final picture samples before/after risky cut boundaries and near the tail match the mapping. Audio-only correlation does not establish picture/lip sync.
 - Original dialogue remains synchronized.
 - Audio is present once, without doubling or phase issues.
 - Duration, resolution, frame rate, and codec verified after export.
@@ -95,4 +99,6 @@ Record each applicable item below with pass/fail and brief visual evidence in th
 - Timeline structure re-read after any proxy-to-master replacement; every affected A-roll item points to the delivery-grade asset while preserving cuts and source offsets.
 - Original-detail composed frames compared with matching source moments for facial texture, hair, glasses, text edges, and background seams.
 - Full framework lint/layout/runtime checks pass.
+- Remaining framework warnings have a recorded reason and actual composed-frame evidence; they are not silently ignored or blindly suppressed. All active layers are checked together for collisions.
+- Final media fully decodes without errors. Any alternate render route uses the same frozen edit and is documented and verified, including video frame count.
 - Final MP4 plays from beginning, middle, and end.

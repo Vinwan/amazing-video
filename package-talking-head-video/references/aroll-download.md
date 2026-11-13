@@ -21,4 +21,6 @@ For a long download, show elapsed progress and bytes when available. A growing `
 
 ## Resume without repeated work
 
+Before declaring `clean-aroll-ready`, also read [timeline-integrity.md](timeline-integrity.md). Validate actual video frame count against the ordered frozen cut spans, not just container duration. Reconstructing a local handoff from source intervals must preserve repeated/overlapping frame occurrences in playback order; union-based selection can silently drop a frame while the audio keeps the apparent duration intact.
+
 Persist the source identity, project/timeline IDs, frozen frame count/FPS, render ID/mode/status, existing authorization scope, expected byte count when supplied, local target path, and validation result. Keep temporary download credentials out of ordinary delivery documentation. On resume, inspect this checkpoint and the actual file before exporting again. Reuse a valid existing local file; otherwise resume the failed handoff. Downstream scene planning may continue while a download runs, but final assembly must wait for the verified A-roll.

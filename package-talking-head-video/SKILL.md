@@ -5,6 +5,8 @@ description: Edit Chinese talking-head videos using ChatCut cleanup, HyperFrames
 
 # Package Talking-Head Video
 
+Read [视频交付核对清单](references/delivery-checklist.md) at the start of every edit. Create a project-local completed copy, update it at each stage and close all applicable checks before delivery. Scope revisions to their actual changes and keep valid unchanged evidence; unchecked or failed required items cannot be reported as complete.
+
 ## Scope and mode first
 
 Determine the requested task before loading tool skills. Diagnosis is read-only; captions-only stops after verified captions; cover-only never rerenders the video. Full packaging in classic and premium-v2.1 must complete the same [matching cover workflow](references/cover.md) before delivery. Default to both 3:4 portrait and 4:3 landscape covers (width:height); follow explicit requests for a different set or no cover.
@@ -28,6 +30,7 @@ Latest explicit user instructions override defaults. Proposed color/geometry wor
 
 - ChatCut owns retained speech, cleanup, final transcript and lip sync. Freeze verified A-roll before downstream timing; speech changes invalidate affected captions/scenes.
 - Protect Will's full recorded introduction before filler and retake cleanup. Use the exact name and cue split in [shared captions](references/captions.md).
+- Do not overlay an introduction image of the presenter himself. Other approved first-mention images display the image alone, without added names or sequence numbers; candidate-review labels remain outside the final video.
 - HyperFrames owns visual interpretation, graphic layout and internal animation. Remotion owns master FPS/canvas, placement, source offsets, captions, mix and final render. Never implement the same animation in both.
 - Preserve the original file, display-conformed aspect ratio, complete A-roll framing, proportions and natural skin color. Only premium's localized circular PiP mask is an exception; full-frame returns stay intact. A different-ratio deliverable needs explicit authorization and a separate derivative.
 - Use delivery-grade media, never upscale a preview proxy when a better source exists. Preserve detail with a lossless/visually lossless handoff and lossless frame capture; follow the delivery settings in [source fidelity](references/source-fidelity.md). Verify actual pixels and decoded media, not just export settings.
@@ -37,6 +40,7 @@ Latest explicit user instructions override defaults. Proposed color/geometry wor
 - Keep stock footage visually clean: no automatic corner labels such as “示意”, “情景示意”, or “概念示意”; retain provenance in the source ledger. See [B-roll](references/broll-sourcing.md) for exceptions.
 - Background music is a per-video choice, separate from semantic SFX. Follow the user’s choice for the current video; if unspecified, ask once whether to add music while continuing independent editing. Do not carry a previous video’s music decision or track into a new video automatically.
 - Missing tools or unreadable assets must be reported; no silent role replacement or false completion.
+- For local handoff and alternate assembly, follow [ordered frame integrity](references/timeline-integrity.md). Verify decoded video frame count and source order separately from audio duration; never deduplicate legitimate repeated source frames. Document any renderer fallback and validate the actual final file.
 - Default opening is moving full-frame presenter plus a prominent centered headline from frame one, protecting face and a separate caption lane. Default cover uses a faithful real frame, clear full head, separate large title, and topic-led imagery.
 - Full packaging runs through verification and delivery; no routine extra approval checkpoints when unattended execution was requested.
 
@@ -48,14 +52,15 @@ Honor each tool skill's prerequisites. Do not preload every plugin merely becaus
 | --- | --- | --- |
 | Inspect source | [Source fidelity](references/source-fidelity.md); run scripts/inspect_video_color.py. Load [color pipeline](references/color-pipeline.md) for HDR/SDR, wide-gamut or exposure/color issues | Verified source metadata, framing/free regions, quality baseline |
 | Clean speech | ChatCut basics, transcription, talking-head-guide; asset-import if importing. Read [cleanup](references/speech-cleanup.md) | Corrected final speech/captions; no clipped words, retakes or gaps |
-| Freeze local handoff | ChatCut verification/export skills when used; [download](references/aroll-download.md) for local handoff | Complete decoded local A-roll and final timing, not a preview/export status |
+| Freeze local handoff | ChatCut verification/export skills when used; [download](references/aroll-download.md) and [frame integrity](references/timeline-integrity.md) | Complete decoded local A-roll, verified ordered source mapping and video frame count, not a preview/export status |
 | Plan scenes | HyperFrames skill; selected mode; [manifest contract](references/manifest.md); [opening](references/opening.md) for opening design | Stable-ID EDL, meaningful beats, protected regions, B-roll briefs |
 | Source footage | [B-roll](references/broll-sourcing.md); Pixabay first; asset-import only when importing | HyperFrames-led clip selection based on inspected excerpts, with source/rights ledger |
+| Source official evidence | [Official sources](references/official-sources.md) when using websites, brand assets or factual cards | Dated original evidence; current state, history and speaker analysis distinguished |
 | Author visuals | HyperFrames and CLI skills; selected visual mode; project DESIGN.md from assets/DESIGN.template.md | Settled hero layout first, then deterministic animations; validate/inspect assets |
 | Compose | Remotion router and only applicable create/markup/captions/multimedia/render skills; [captions](references/captions.md) when caption work is needed | One canonical timeline; correct alpha, trim, placement, captions and audio |
 | Premium finishing | [Finishing](references/premium-finishing.md) before sound/highlights/micro-animation decisions | Semantic restrained SFX and actual rendered emphasis; no implied music |
 | Cover (both current modes) | [Cover](references/cover.md), local source frame and saved reference; built-in imagegen skill | Each required cover generated, checked for exact ratio and inspected at full size and phone-grid size, and saved with its source frame and prompt |
-| Acceptance | [Checklist](references/quality-checklist.md), selected mode's acceptance items | Structural, pixel and audio checks pass; concise evidence report |
+| Acceptance | [Delivery checklist](references/delivery-checklist.md), [technical checks](references/quality-checklist.md), selected mode's acceptance items | Project checklist completed with pass/fail/not-applicable evidence; actual final media verified |
 
 For premium, assess real-footage needs after speech freeze even if none are accepted; record search outcomes or editorial/access reasons. Classic searches only where footage use is planned. Never require a clip quota.
 Create scenes when meaning changes, not per subtitle page. Use footage for concrete actions, diagrams for mechanisms, and full-frame presenter for judgments/handoffs/close. For sparse premium information, use full-frame presenter overlays under the 2.1 rules. For complex diagram-only explanations, premium PiP omission is a readability exception recorded in EDL. Stock-video scenes always use the stock-only treatment above, with `pip: false` recorded in the EDL.
@@ -82,7 +87,7 @@ A text-only design change does not justify regenerating media or re-searching st
 
 ## Acceptance and delivery
 
-The checklist is the acceptance authority; mode references define style, not a competing technical standard. Inspect actual composed opening, dense text, important footage/action, scene edges, presenter returns and ending. Compare original-detail source/intermediate/final samples for face/hair/glasses; diagnose the first stage where degradation occurs.
+The delivery checklist is the required execution gate and links to the detailed technical checks; mode references define style, not a competing technical standard. Inspect actual composed opening, dense text, important footage/action, scene edges, presenter returns and ending. Check all simultaneously active layers throughout a beat, including first-mention images, cards, gestures, PiP and captions; move or simplify supporting graphics when they compete. Compare original-detail source/intermediate/final samples for face/hair/glasses; diagnose the first stage where degradation occurs.
 Cover acceptance is a separate delivery gate in both current modes. Verify the cover against its real source frame and at phone-grid size. Preserve dimensions and authentic logos; do not infer relationships from decorative brand proximity.
-For full packaging deliver final MP4, matching covers and source frame/time, editable Remotion, cleaned ChatCut project or A-roll, corrected caption data, EDL, HyperFrames sources/assets, source ledger/credits and sound cues when used, plus a concise validation summary.
+For full packaging deliver final MP4, matching covers and source frame/time, editable Remotion, cleaned ChatCut project or A-roll, corrected caption data, EDL, HyperFrames sources/assets, source ledger/credits and sound cues when used, plus the completed project checklist and concise validation evidence.
 Diagnosis returns evidence, cause, prioritized fixes and explicit confirmation that no video was regenerated. Report partial results and blockers accurately.

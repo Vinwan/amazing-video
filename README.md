@@ -50,6 +50,10 @@
 
 背景音乐由每条视频单独选择，不自动沿用上一条视频的配乐决定或曲目；语义音效与背景音乐分别处理。
 
+每次剪辑开始须读取[视频交付核对清单](package-talking-head-video/references/delivery-checklist.md)，在项目中逐阶段填写结果与证据，交付前完成适用项。清单包含清剪、官网信息、首次配图、遮挡、字幕、音画同步、画质、配乐、封面及工程交付。本人不叠首提图片，其他配图只显示图片，不另加名称或序号。
+
+清剪交接必须核对实际解码的视频帧数与源片段的播放顺序：相邻片段重叠的一帧可能需要播放两次，不能合并去重。音频时长相同不代表画面同步。详见[逐帧交接规范](package-talking-head-video/references/timeline-integrity.md)；配套检查脚本支持恒定帧率、等速剪辑映射。官网证据须区分当前状态、历史功能和讲者分析，详见[官方素材规范](package-talking-head-video/references/official-sources.md)。
+
 Pixabay API 密钥通过本机环境变量 `PIXABAY_API_KEY` 提供，不要写入仓库或项目文件。配置与回退方式见 [素材搜索规范](package-talking-head-video/references/broll-sourcing.md)。
 
 口播时间线冻结后，HyperFrames 和 Remotion 不独立修改讲话节奏。若口播有改动，受影响的字幕和场景时间也要同步更新。
