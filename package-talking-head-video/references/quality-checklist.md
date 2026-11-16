@@ -40,6 +40,8 @@ Use [视频交付核对清单](delivery-checklist.md) as the mandatory per-proje
 
 ## Layout and motion
 
+- Inspect the actual shortest/narrowest and widest cards and longest labels at full size and phone size. Check for oversized gutters, clipped names, stretched images and cover of the presenter or captions. For full-screen pages, inspect each reveal and the complete hold, confirming fixed earlier panels, a clear caption lane, and synchronized PiP. Review transitions for duplicate side-card and full-screen content.
+
 - Pixabay placements have been checked by provider asset ID for unnecessary repetition; a different trim of the same asset counts as reuse. Any deliberate repeat has a recorded reason.
 - Every stock-video scene shows no actual presenter, including PiP, cutouts, underlying letterbox areas, and entry/exit overlaps. Narration may continue; stock scenes have `pip: false` in the EDL.
 - Stock footage has no automatic corner “示意”/category labels. Inspect the actual composed excerpts, including both top corners; any requested or necessary exception is recorded. Source provenance remains in the ledger/credits.

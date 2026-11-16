@@ -29,11 +29,11 @@ For a connected list, ordered steps or a set of closing questions, assign fixed 
 
 When the narration sets up unanswered items in a grid or checklist, show the empty slots with neutral placeholders if the structure matters. Reveal each slot's text only at its own spoken cue. Keep earlier reveals visible and future labels concealed. Check all intermediate states on the final timeline.
 
-These text cards explain the narration. First-mention product/person images follow the separate approval workflow below and display the approved image alone, including any original text in the image.
+These text cards explain the narration. First-mention product/person images follow the separate approval workflow below and display the approved image, including its original text. Dedicated cards add a name according to the guidance below.
 
 ## First-mention product and person cards — required approval gate
 
-The presenter's own appearances and self-introduction are exempt: do not overlay a picture of Will himself. Record this standing user preference as `waived-by-user` where needed; it does not waive other named people. Approved entity cards show only the selected image (including text already within it), without added names, lower labels or sequence numbers. Preview/contact-sheet numbering is for review only.
+The presenter's own appearances and self-introduction are exempt: do not overlay a picture of Will himself. Record this standing user preference as `waived-by-user` where needed; it does not waive other named people. Dedicated cards show the approved image and the name below it. Preview/contact-sheet numbering is for review only.
 
 During the initial storyboard, identify every named product/app and person in the narration and reserve a floating image-card beat only at each entity’s first spoken mention in the whole video. Merge full names, short names, aliases and alternate spellings that refer to the same entity. The second and every subsequent mention must not replay, re-enter or create another product/person introduction card; a new scene or chapter does not reset the first-mention count. Use the final retained speech to confirm the earliest occurrence after cleanup, rather than anchoring to a deleted take.
 
@@ -53,7 +53,18 @@ Place an approved card at the first spoken mention, beside the full-frame speake
 
 If the first mention occurs during the opening title, first adjust the title’s layout/timing to avoid competing with the first-mention card; do not automatically delay the card until the title exits. If no safe layout works, state the proposed timing/presentation exception in the preview and obtain the user’s explicit approval for that exception. Image approval alone does not approve a delay, omission or different presentation. Keep the true first-mention timestamp and the separately approved display plan in the manifest; do not retime speech to resolve the conflict.
 
+## Approved full-screen and dedicated card treatments
+
+- Full-screen explanations follow the approved Wallet 00:27 layout: warm charcoal with a subtle texture, a clear title, and aligned dark panels with thin gold borders. Each panel carries one point with a large warm heading, a meaningful illustration or icon when helpful, and a short line of context. Choose the number of panels for the story. Reveal panels at their spoken cues, keep earlier panels fixed, and hold the complete page for reading. Use a small synchronized circular presenter inset with a fine gold rim, normally in the lower-left safe area, clear of panels and subtitles.
+- Dedicated brand, product and portrait cards use a raised light inset over a warm ivory base with a soft shadow. Show the verified logo or approved image above a separate name, even when the logo includes a wordmark. Preserve the asset’s proportions and official logo colors. Other supporting images keep their image-only treatment.
+
 ## Layout and motion contract
+
+### Content-sized cards
+
+- Measure the actual photo, logo, headline and name before laying out the card. For portraits, size the inset from the image’s aspect ratio at a readable photo height, then add consistent padding and the name area. Narrow photos get narrower shells; wide photos and product images can use wider ones within the available space. Keep the approved crop and image proportions. Avoid equal-width empty side gutters, stretched images, and fixed boxes that turn a portrait into a thumbnail.
+- Give the name enough room to read. Adjust width or use a deliberate line break within the safe area. For paired cards, align their tops or name baselines and match padding, type and materials; let outer widths follow their contents. Keep each card’s geometry fixed while it is visible. Cap widths by the clear space in the shot and check the largest state against the presenter’s head, gestures and captions.
+- Give each point one main visual treatment. If a side card would repeat the same numbers or message in an immediately following full-screen page, keep the stronger treatment, usually the full-screen page. Preserve any distinct context or approved first-mention requirement; when the user explicitly removes a first-mention card, record that decision in the manifest.
 
 - Use the matching moving full-frame cleaned A-roll and its original background. Do not shrink it into a circular/rectangular PiP, crop/reposition the person, generate a cutout, or pan the camera to manufacture empty space. Do not add a duplicate presenter circle over the full-frame speaker.
 - Inspect source frames across the whole selected passage, including the widest gesture. Choose the clearest low-information region for each passage. Portrait footage can use open space above the presenter; landscape footage can use clear space to the left or right. Treat orientation as a starting point and verify the location against the actual composition throughout the card’s hold. Protect the complete head, eyes, mouth, meaningful gestures, products and the fixed caption lane.
